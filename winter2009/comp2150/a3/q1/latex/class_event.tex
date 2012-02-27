@@ -1,0 +1,103 @@
+\hypertarget{class_event}{
+\section{Event Class Reference}
+\label{class_event}\index{Event@{Event}}
+}
+Model an event in an event-based simulation.  
+
+
+Inheritance diagram for Event::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.97531cm]{class_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_event_2561c2efeea27bff2bbda6c6dd33aea3}{Event} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_person}{Person} \hyperlink{class_event_28f906bdfa717a32d605aedde772d530}{actor})
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_event}{Event}. \item\end{CompactList}\item 
+int \hyperlink{class_event_6ef202b20715ab70bcfc052e64f1094b}{compareTo} (\hyperlink{class_sortable_object}{SortableObject} other)
+\begin{CompactList}\small\item\em Compare this event to another using the event time. \item\end{CompactList}\item 
+\hypertarget{class_event_b59bcdd2fe17bf7652bc503f5f537297}{
+int \hyperlink{class_event_b59bcdd2fe17bf7652bc503f5f537297}{getTime} ()}
+\label{class_event_b59bcdd2fe17bf7652bc503f5f537297}
+
+\begin{CompactList}\small\item\em Returns the time at which this event occurs. \item\end{CompactList}\item 
+\hypertarget{class_event_6f8cd987ea0030c2de017324405580fe}{
+\hyperlink{class_person}{Person} \hyperlink{class_event_6f8cd987ea0030c2de017324405580fe}{getActor} ()}
+\label{class_event_6f8cd987ea0030c2de017324405580fe}
+
+\begin{CompactList}\small\item\em Return the \hyperlink{class_person}{Person} this event involves. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Functions}
+\begin{CompactItemize}
+\item 
+abstract void \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{action} ()
+\begin{CompactList}\small\item\em Method called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{
+int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}}
+\label{class_event_d4c0fbb00c3fd993405df98bafcd52c5}
+
+\begin{CompactList}\small\item\em Time at which this event occurs. \item\end{CompactList}\item 
+\hypertarget{class_event_28f906bdfa717a32d605aedde772d530}{
+\hyperlink{class_person}{Person} \hyperlink{class_event_28f906bdfa717a32d605aedde772d530}{actor}}
+\label{class_event_28f906bdfa717a32d605aedde772d530}
+
+\begin{CompactList}\small\item\em Employee or \hyperlink{class_customer}{Customer} this event refers to. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Model an event in an event-based simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_event_2561c2efeea27bff2bbda6c6dd33aea3}{
+\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\subsubsection[{Event}]{\setlength{\rightskip}{0pt plus 5cm}Event::Event (int {\em time}, \/  {\bf Person} {\em actor})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_event_2561c2efeea27bff2bbda6c6dd33aea3}
+
+
+Construct a new \hyperlink{class_event}{Event}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]the time at which the event occurs \item[{\em actor}]the person this event involves \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_person}{Person} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_event_fea360b9a95713e43cf3f9fa44150074}{
+\index{Event@{Event}!action@{action}}
+\index{action@{action}!Event@{Event}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}abstract void Event::action ()\hspace{0.3cm}{\tt  \mbox{[}package, pure virtual\mbox{]}}}}
+\label{class_event_fea360b9a95713e43cf3f9fa44150074}
+
+
+Method called when this event \char`\"{}happens\char`\"{}. 
+
+
+
+Implemented in \hyperlink{class_cashier_arrival_event_f3bf40e4e3915f54eb9a24ac816ed0cb}{CashierArrivalEvent}, \hyperlink{class_cashier_departure_event_58a6e618df64f71ef309786ef8a9488f}{CashierDepartureEvent}, \hyperlink{class_change_line_up_event_e7a0c51e7d5fd3e2e126381045f22683}{ChangeLineUpEvent}, \hyperlink{class_checkout_event_cd029a04de786e0d128b3f4220724d4f}{CheckoutEvent}, \hyperlink{class_customer_arrival_event_70898c7fa4f92abf462e03b1cd76756b}{CustomerArrivalEvent}, \hyperlink{class_customer_departure_event_0245be14abc9118d39123158559e1cdb}{CustomerDepartureEvent}, \hyperlink{class_shift_completed_event_4b09c21b802da89066245fbfc0111049}{ShiftCompletedEvent}, and \hyperlink{class_start_checkout_event_84fa31ea480e52721e62eee452d87e0e}{StartCheckoutEvent}.\hypertarget{class_event_6ef202b20715ab70bcfc052e64f1094b}{
+\index{Event@{Event}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!Event@{Event}}
+\subsubsection[{compareTo}]{\setlength{\rightskip}{0pt plus 5cm}int Event::compareTo ({\bf SortableObject} {\em other})\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_event_6ef202b20715ab70bcfc052e64f1094b}
+
+
+Compare this event to another using the event time. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em other}]The event to compare against \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{class_sortable_object_b8f80361da32c8b04d89116993e60847}{SortableObject}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Event.java\end{CompactItemize}

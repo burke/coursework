@@ -1,0 +1,7 @@
+I didn't have time to implement most of the actual code for this assignment, but the object hierarchy is there I guess. 
+
+To compile: 
+make
+
+To run: 
+./main

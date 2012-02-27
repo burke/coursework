@@ -1,0 +1,74 @@
+\documentclass[10pt,letterpaper,titlepage]{article}
+
+\begin{document}
+
+\author{Burke Libbey \\ 6840752}
+\title{Lab 2: Network Programming: Web Server and Threads}
+\date{\today}
+
+\maketitle
+
+\subsection*{1: Simple Mail Transfer Protocol}
+
+Generated message available at: \\
+\texttt{http://burkelibbey.org/classes/winter2008/ece3700/lab2}
+
+\subsection*{2: Post Office Protocol}
+
+The password is readily visible, as POP is a plain text protocol, and doesn't implement any kind of password security. Some webmail services (ex. Gmail) perform initial authentication over SSL. Passwords sent in this manner are not easily obtainable. Services that use plain HTTP authentication suffer from the same plaintext problem.
+
+\subsection*{3: Thread Class}
+
+\begin{enumerate}
+  \item The owner and company are not matched as expected, since the threads sleep between printing the owner and company. The results are instead matched from the end of one line to to the start of the next.
+  \item When a thread isn't daemonized, it will run in the foreground. This doesn't mean a lot in this case, since to make it a true daemon, we'd have to set it as a child of PID 1. Both threads will close when their parent process does.
+
+  \item This program is running three threads: the main (parent) thread, `first', and `second'.
+
+\end{enumerate}
+
+\subsection*{4: Runnable Interface}
+
+\begin{enumerate}
+  \item MyInterface is not a subclass of Thread, and therefore doesn't include the method `sleep' directly. 
+
+  \item An interface is a way to allow, but not force a class to be loaded as a thread. Extending the Thread class does not have this benefit.
+
+  \item In 2, the output is synchronized, since it uses the `synchronize' construct to indicate that a group of commands should be executed together before giving up control.
+
+\end{enumerate}
+
+\subsection*{5: HTTP}
+\begin{enumerate}
+\item \texttt{index.html} available at website referenced in \S 1.
+\item No answer seems necessary
+\item No answer seems necessary
+\item Request headers include `Host', `User-Agent', `Accept', `Accept-Language', `Accept-Encoding', `Accept-Charset', `Keep-Alive', `Connection', `Referer', `If-Modified-Since', and `Cache-Control'. Response headers include `Server', `Last-Modified', and `Content-Type'.
+\item Google sends the additional response headers `Cache-Control', `Content-Encoding', `Content-Length', `Date', `X-Cache', `Via', and `Connection'.
+
+
+\end{enumerate}
+
+\subsection*{6: Content-Type}
+(See code)
+
+\subsection*{7: If-Modified-Since}
+The `If-Modified-Since' tag essentially asks the webserver to send the file only if it has been updated since the last time it was fetched. This is useful when browsers use extensive caching, as it's a simple way to find out whether the page needs to be re-downloaded.
+
+\subsection*{8: Javadoc}
+\begin{enumerate}
+  \item \texttt{http://java.sun.com/j2se/javadoc/writingdoccomments/}
+
+  \item 
+    \begin{itemize}
+      \item `//' comments: These are most useful to provide a single line of documentation for a line or block of code.
+      \item `/*' comments: Useful for providing more extensive documentation for especially confusing sections of code and methods.
+      \item Javadoc comments: A special case of `/*' comments, these are used to provide structured documentation for classes, methods, and so on.
+    \end{itemize}
+   \item This looks like a pretty poor time investment to mark ratio, so I'll be passing on this question in light of a Physics 2 lab due tomorrow.
+
+
+\end{enumerate}
+
+
+\end{document}

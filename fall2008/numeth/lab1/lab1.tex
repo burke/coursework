@@ -1,0 +1,149 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{\center MATH 2120 Lab 1\\ \small Burke Libbey (6840752)}
+
+\begin{enumerate}
+
+  \item %1
+
+    \begin{enumerate}
+
+      \item
+        $E_{abs} = |3.141592 - 3.14| = 0.001592$ \\
+        $E_{rel} = |3.141592 - 3.14|/|3.141592| = 0.00050674944$
+      \item %1ii
+        $E_{abs} = |1,000,000 - 999,996| = 4$ \\
+        $E_{rel} = |1,000,000 - 999,996|/|1,000,000| = 0.000004$ 
+      \item %1iii
+        $E_{abs} = |0.000012 - 0.000009| = 0.000003$ \\
+        $E_{rel} = |0.000012 - 0.000009|/|0.000012| = 0.25$ 
+    \end{enumerate}
+
+  \item %2
+    \begin{enumerate}
+      \item %2i
+        $f(2.73) = 20.3 - 5(7.45) + 16.3 + 0.55 = -0.05$ \\
+        $\delta = |0.011917 - (-0.05)|/|0.011917| * 100 = 519.5\%$
+      \item %2ii
+        $f(2.73) = 0.0320$ \\
+        $\delta = |0.011917 - 0.0320|/|0.011917| * 100 = 168.5\%$
+      \item The error in (b) is significantly lower than in (a). This is expected, since we've avoided subtracting similar small numbers.
+    \end{enumerate}
+
+  \item %3
+    Done in double precision, this calculation results in $0$. \\
+    \noindent A better representation would be:
+    \[ \frac{1}{x(x+1)} \]
+   
+  \item %4
+      $x_1 = x_0 - \frac{f(x_0)}{f'(x_0)} = 1.30769$ \\
+      $x_2 = x_1 - \frac{f(x_1)}{f'(x_1)} =  $
+      
+\newpage
+
+  \item %5
+    \begin{enumerate}
+      \item
+        This sort of depends on your definition of `near'. It converges to a value on the same order of magnitude (8.4667).
+
+        \begin{table}[htb] 
+          \centering
+          \caption{5a}
+          \begin{tabular}{l l}
+            \hline\hline
+            n & $x_n$ \\
+            \hline
+            0 & 2 \\
+            1 & 6 \\
+            2 & 8.66667 \\
+            3 & 8.84024 \\
+            4 & 8.4645 \\
+            5 & 8.4666 \\
+            6 & 8.4667 \\
+            7 & 8.4667 \\
+            \hline
+          \end{tabular} 
+        \end{table}
+
+        \item
+          This converges to 1.2440, but it takes many more iterations than last time.
+
+        \begin{table}[htb] 
+          \centering
+          \caption{5b}
+          \begin{tabular}{l l l l l l l l}
+            \hline\hline
+            n & $x_n$    & n & $x_n$ & n & $x_n$\\
+            \hline
+            0 & 2 &      20& 1.2300 & 41& 1.2442 \\
+            1 & 0.8571 & 21& 1.2556 & 42& 1.2434 \\
+            2 & 1.7193 & 22& 1.2341 & 43& 1.2441 \\
+            3 & 0.9586 & 23& 1.2521 & 44& 1.2436 \\
+            4 & 1.5567 & 24& 1.2369 & 45& 1.2440 \\
+            5 & 1.0357 & 25& 1.2497 & 46& 1.2437 \\
+            6 & 1.4548 & 26& 1.2390 & 47& 1.2440 \\
+            7 & 1.0932 & 27& 1.2480 & 48& 1.2437 \\
+            8 & 1.3883 & 28& 1.2404 & 49& 1.2440 \\
+            9 & 1.1356 & 29& 1.2468 & 50& 1.2440 \\
+            10& 1.3437 & 30& 1.2414 & &\\
+            11& 1.1665 & 31& 1.2459 & &\\
+            12& 1.3133 & 32& 1.2421 & &\\
+            13& 1.1887 & 33& 1.2453 & &\\
+            14& 1.2923 & 34& 1.2426 & &\\
+            14& 1.2047 & 35& 1.2449 & &\\
+            15& 1.2778 & 36& 1.2430 & &\\
+            16& 1.2161 & 37& 1.2446 & &\\
+            17& 1.2677 & 38& 1.2433 & &\\
+            18& 1.2242 & 39& 1.2444 & &\\
+            19& 1.2606 & 40& 1.2434 & &\\
+
+            
+            \hline
+          \end{tabular} 
+        \end{table}
+
+\newpage
+        \item
+          This one is back to a reasonable number of iterations, and converges to 1.2439.
+
+        \begin{table}[htb] 
+          \centering
+          \caption{5c}
+          \begin{tabular}{l l}
+            \hline\hline
+            n & $x_n$ \\
+            \hline
+            0 & 2 \\
+            1 & 1.3093 \\
+            2 & 1.2491 \\
+            3 & 1.2443 \\
+            4 & 1.2439 \\
+            5 & 1.2439 \\
+            \hline
+          \end{tabular} 
+        \end{table}
+
+
+    \end{enumerate}
+  \item %6
+ 
+  \item %7
+
+\end{enumerate}
+
+
+
+
+
+\end{document}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

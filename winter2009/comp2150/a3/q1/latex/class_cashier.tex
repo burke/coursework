@@ -1,0 +1,93 @@
+\hypertarget{class_cashier}{
+\section{Cashier Class Reference}
+\label{class_cashier}\index{Cashier@{Cashier}}
+}
+Models an employee in an event-based simulation.  
+
+
+Inheritance diagram for Cashier::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_cashier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_cashier_f2d5ea95917be1e7ae459b14299b6341}{Cashier} (int employeeNumber, int \hyperlink{class_cashier_c190b84e4cb0074a9e1b6c2fa3d1cda9}{quittingTime}, int arrivalTime)
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_cashier}{Cashier}. \item\end{CompactList}\item 
+int \hyperlink{class_cashier_d5c921d4dfccb88928f8cd501397249e}{unitsForItems} (int items)
+\begin{CompactList}\small\item\em Return the number of time units this employee will take to process n items. \item\end{CompactList}\item 
+\hypertarget{class_cashier_da5b4a10dca4c7b9a561387653ca4e04}{
+int \hyperlink{class_cashier_da5b4a10dca4c7b9a561387653ca4e04}{getQuittingTime} ()}
+\label{class_cashier_da5b4a10dca4c7b9a561387653ca4e04}
+
+\begin{CompactList}\small\item\em return the time at which this employee expects to leave \item\end{CompactList}\item 
+\hypertarget{class_cashier_cd10cd48f208ec3f472f6c83bbed282e}{
+int \hyperlink{class_cashier_cd10cd48f208ec3f472f6c83bbed282e}{getSpeed} ()}
+\label{class_cashier_cd10cd48f208ec3f472f6c83bbed282e}
+
+\begin{CompactList}\small\item\em return the speed of this employee \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_cashier_c190b84e4cb0074a9e1b6c2fa3d1cda9}{
+int \hyperlink{class_cashier_c190b84e4cb0074a9e1b6c2fa3d1cda9}{quittingTime}}
+\label{class_cashier_c190b84e4cb0074a9e1b6c2fa3d1cda9}
+
+\begin{CompactList}\small\item\em Time employee's shift ends. \item\end{CompactList}\item 
+\hypertarget{class_cashier_fdf1c44c8ba11bad963c5a2deb96ab24}{
+int \hyperlink{class_cashier_fdf1c44c8ba11bad963c5a2deb96ab24}{speed}}
+\label{class_cashier_fdf1c44c8ba11bad963c5a2deb96ab24}
+
+\begin{CompactList}\small\item\em Number of items per time unit employee is capable of processing. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_cashier_013728f8b9e753298d85008bdc0d6e3f}{
+static Random \hyperlink{class_cashier_013728f8b9e753298d85008bdc0d6e3f}{x} = new Random(1000)}
+\label{class_cashier_013728f8b9e753298d85008bdc0d6e3f}
+
+\begin{CompactList}\small\item\em Random sequence for generating cashier speeds. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models an employee in an event-based simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cashier_f2d5ea95917be1e7ae459b14299b6341}{
+\index{Cashier@{Cashier}!Cashier@{Cashier}}
+\index{Cashier@{Cashier}!Cashier@{Cashier}}
+\subsubsection[{Cashier}]{\setlength{\rightskip}{0pt plus 5cm}Cashier::Cashier (int {\em employeeNumber}, \/  int {\em quittingTime}, \/  int {\em arrivalTime})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cashier_f2d5ea95917be1e7ae459b14299b6341}
+
+
+Construct a new \hyperlink{class_cashier}{Cashier}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em employeeNumber}]the ID number of the \hyperlink{class_cashier}{Cashier} \item[{\em quittingTime}]the time at which this employee expects to end their shift \item[{\em arrivalTime}]ths time at which this employee will arrive \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cashier_d5c921d4dfccb88928f8cd501397249e}{
+\index{Cashier@{Cashier}!unitsForItems@{unitsForItems}}
+\index{unitsForItems@{unitsForItems}!Cashier@{Cashier}}
+\subsubsection[{unitsForItems}]{\setlength{\rightskip}{0pt plus 5cm}int Cashier::unitsForItems (int {\em items})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cashier_d5c921d4dfccb88928f8cd501397249e}
+
+
+Return the number of time units this employee will take to process n items. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em items}]the number of itmems to process \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Cashier.java\end{CompactItemize}

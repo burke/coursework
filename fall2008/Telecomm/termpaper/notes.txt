@@ -1,0 +1,2 @@
+http://tldp.org/HOWTO/Security-HOWTO/
+http://www.kernel.org/pub/linux/libs/pam/index.html

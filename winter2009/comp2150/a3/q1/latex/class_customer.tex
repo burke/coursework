@@ -1,0 +1,133 @@
+\hypertarget{class_customer}{
+\section{Customer Class Reference}
+\label{class_customer}\index{Customer@{Customer}}
+}
+Models a customer in an event-based store simulation.  
+
+
+Inheritance diagram for Customer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_customer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_customer_69f5e0864420308a7842c74b84f8635a}{Customer} (int \hyperlink{class_customer_d7463824c52b73b3a4f772f4ba3c902a}{numItems}, int \hyperlink{class_person_bcad6c190949170c19df773b5b2757ac}{arrival})
+\begin{CompactList}\small\item\em Constructs a new \hyperlink{class_customer}{Customer} object. \item\end{CompactList}\item 
+\hypertarget{class_customer_688d6d47e6cc84f41f8165624d9fd936}{
+void \textbf{startWaiting} (int time)}
+\label{class_customer_688d6d47e6cc84f41f8165624d9fd936}
+
+\item 
+\hypertarget{class_customer_f4f2c228a852f22cb7a8dccd45db971c}{
+void \textbf{stopWaiting} (int time)}
+\label{class_customer_f4f2c228a852f22cb7a8dccd45db971c}
+
+\item 
+\hypertarget{class_customer_5de8e7c1faf127325b12ea593a192bf2}{
+int \textbf{totalTimeWaiting} ()}
+\label{class_customer_5de8e7c1faf127325b12ea593a192bf2}
+
+\item 
+\hypertarget{class_customer_4c5d8774517801f4b369505d9a0cc7da}{
+int \textbf{getPatience} ()}
+\label{class_customer_4c5d8774517801f4b369505d9a0cc7da}
+
+\item 
+\hypertarget{class_customer_20c3458cd265fcacfad63339172264ed}{
+int \hyperlink{class_customer_20c3458cd265fcacfad63339172264ed}{getStartedCheckout} ()}
+\label{class_customer_20c3458cd265fcacfad63339172264ed}
+
+\begin{CompactList}\small\item\em return the time at which this customer started checking out \item\end{CompactList}\item 
+void \hyperlink{class_customer_70b41b48c5b37fc41bb1fce713edc743}{setStartedCheckout} (int time)
+\begin{CompactList}\small\item\em Set the time at which this customer will start checking out for future reference. \item\end{CompactList}\item 
+\hypertarget{class_customer_56588b611df6ad6aaf42bda14fe550bc}{
+int \hyperlink{class_customer_56588b611df6ad6aaf42bda14fe550bc}{getNumItems} ()}
+\label{class_customer_56588b611df6ad6aaf42bda14fe550bc}
+
+\begin{CompactList}\small\item\em return the number of items this customer is purchasing \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_customer_d7463824c52b73b3a4f772f4ba3c902a}{
+int \hyperlink{class_customer_d7463824c52b73b3a4f772f4ba3c902a}{numItems}}
+\label{class_customer_d7463824c52b73b3a4f772f4ba3c902a}
+
+\begin{CompactList}\small\item\em Number of grocery items this customer has. \item\end{CompactList}\item 
+\hypertarget{class_customer_a9a95ed206f0a4109a7febe14f804ade}{
+int \hyperlink{class_customer_a9a95ed206f0a4109a7febe14f804ade}{startedCheckout} = -1}
+\label{class_customer_a9a95ed206f0a4109a7febe14f804ade}
+
+\begin{CompactList}\small\item\em Time at which customer started checking out, or -1 if they haven't yet. \item\end{CompactList}\item 
+\hypertarget{class_customer_cb7bd88d43fa7d70b7919516fa2859b6}{
+int \textbf{patience}}
+\label{class_customer_cb7bd88d43fa7d70b7919516fa2859b6}
+
+\item 
+\hypertarget{class_customer_7e77803d36a36759913b48a2024b6e11}{
+int \textbf{timeSpentWaiting} = 0}
+\label{class_customer_7e77803d36a36759913b48a2024b6e11}
+
+\item 
+\hypertarget{class_customer_b61cc98516fe2e291eb545745e00f225}{
+int \textbf{startedWaiting} = -1}
+\label{class_customer_b61cc98516fe2e291eb545745e00f225}
+
+\end{CompactItemize}
+\subsection*{Static Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_customer_ac5e70d5b72179a4df902ef65ef09e7e}{
+static int \hyperlink{class_customer_ac5e70d5b72179a4df902ef65ef09e7e}{baseId} = 42}
+\label{class_customer_ac5e70d5b72179a4df902ef65ef09e7e}
+
+\begin{CompactList}\small\item\em Initial \hyperlink{class_customer}{Customer} ID. It'll increment from here. \item\end{CompactList}\item 
+\hypertarget{class_customer_d81371bd3eb86b018a7aed8770c118bd}{
+static Random \hyperlink{class_customer_d81371bd3eb86b018a7aed8770c118bd}{x} = new Random(1000)}
+\label{class_customer_d81371bd3eb86b018a7aed8770c118bd}
+
+\begin{CompactList}\small\item\em Random sequence for generating customer patience. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models a customer in an event-based store simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_customer_69f5e0864420308a7842c74b84f8635a}{
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\subsubsection[{Customer}]{\setlength{\rightskip}{0pt plus 5cm}Customer::Customer (int {\em numItems}, \/  int {\em arrival})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_customer_69f5e0864420308a7842c74b84f8635a}
+
+
+Constructs a new \hyperlink{class_customer}{Customer} object. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em numItems}]the number of items this customer is purchasing \item[{\em arrival}]the time at which this customer arrived \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_customer_70b41b48c5b37fc41bb1fce713edc743}{
+\index{Customer@{Customer}!setStartedCheckout@{setStartedCheckout}}
+\index{setStartedCheckout@{setStartedCheckout}!Customer@{Customer}}
+\subsubsection[{setStartedCheckout}]{\setlength{\rightskip}{0pt plus 5cm}void Customer::setStartedCheckout (int {\em time})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_customer_70b41b48c5b37fc41bb1fce713edc743}
+
+
+Set the time at which this customer will start checking out for future reference. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]the time at which customer starts checking out. \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Customer.java\end{CompactItemize}

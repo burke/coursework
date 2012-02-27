@@ -1,0 +1,16 @@
+\documentclass[10pt,letterpaper]{article}
+
+\begin{document}
+
+\author{Burke Libbey}
+\date{\today}
+\title{ECE 3700 Assignment 10}
+\maketitle
+
+The md5 checksum of the executable produced by md5.c is \\
+`\texttt{b0e9a6730f90a73be0b41978a92206a7}'. The md5sum can be used to verify that a file is identical to a previously verified version. 
+
+After a minor modification to a comment in md5.c, the checksum of the compiled executable is still `\texttt{b0e9a6730f90a73be0b41978a92206a7}'. This makes sense, since a change in a comment should not affect the compiler output, so the generated program should be identical to the one from before -- at least, I can't think of any practical application of a non-deterministic compiler.
+
+
+\end{document}

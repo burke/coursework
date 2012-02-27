@@ -1,0 +1,26 @@
+4
+length = 13
+width = 10
+area = length * width
+
+extension = 14
+fullarea = area + extension
+
+t1 = 13 + 63
+t1 = t1 / 4
+t1 = 65 - t1
+Q
+x = 3
+r = x
+x = x + t
+t = 36
+Q
+x = 23
+y = x + 2
+y = y * 5
+Q
+
+x2 = 23
+y2 = x2 + 2
+z = y2 * 5
+Q

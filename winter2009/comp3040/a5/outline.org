@@ -1,0 +1,24 @@
+* Compiling & Linking
+** g++ is GCC component for C++.
+** g++ -o programname source.cpp
+** .cc vs. .cpp
+* Running
+** ./programname
+* Output
+** #include <iostream>
+** using namespace std;
+** std::cout << "mystring";
+** std::endl
+* Hello, World!
+** Create new source file program.cpp
+** Explain main function, return value.
+** Sample code
+*** #include <iostream>
+*** int main() {
+***   std::cout << "Hello, World!" << std::endl;
+***   return 0;
+*** }
+** Compile source file
+*** g++ -o program program.cpp
+** Run program
+*** ./program

@@ -1,0 +1,5 @@
+-->To compile: 
+gcc -o shell shell.c
+
+--> To run: 
+./shell

@@ -1,0 +1,78 @@
+ECE2220 Review
+
+Basic Gates
+-Analysis, timing diagrams, and synthesis
+
+Boolean Algebra
+-axioms, theorems, and properties (de morgan's, etc.)
+-logic functions
+
+Standard Forms
+-sum of products form, product of sums form, canonical form
+-minterms, maxterms, and truth tables
+-synthesis of standard forms
+
+Optimization of Logic Functions (ch.4)
+-karnaugh maps
+-minimization with maps
+-strategies for minimization (prime implicants, etc.)
+-minimization of PoS form
+-incompletely specified functions (DC states)
+-multiple output circuits
+-NAND and NOR implementations
+-Fan-in solutions: multilevel synthesis, factoring, functional decomposition
+-Analysis of multilevel NAND and NOR circuits
+
+Implementation Technology (ch.3)
+-NMOS, PMOS, and CMOS gate realization
+-Standard chips and devices
+  -7400-series
+  -vlsi (eg. CPLD, FPGA, etc.)
+-Practical implications of fabrication technologies
+  -noise margins
+  -dynamic switching
+    -propagation delays
+    -power dissipation
+  -Fan-in, fan-out
+-Tri-state buffers
+
+Combinational Circuit Building Blocks (ch.6)
+-Muxes
+  -Shannon's Expansion Theorem
+-Decoders/Encoders
+-Code Converters
+-Arithmetic Comparison Circuits
+
+Fip-flops, Registers, and Counters (ch.7)
+-Basic SR latch, gated latch, edge triggered latch
+-Flip-flops with clear and preset
+-D, JK, and T type flipflops
+-Registers: Shift registers, parallel access shift register
+-Counters: asynchronous counters, synchronous counter, counters with parallel load, BCD counters, ring counter, and Johnson counter
+-Reset synchronization
+
+Sequential Circuits (ch.8)
+-Moore and Mealy types
+-Design steps: state diagram, state table, state assignment, excitation table
+-state assignment problam and one hot encoding
+-state minimization, partitioning, and cincompletely specified state tables
+-Analysis of FSMs
+-Algorithmic State machine starts
+
+Number representation and arithmetic circuits (ch.5)
+-positional number representation
+  -unused numbers
+  -Addition of integers,
+  -signed numbers
+  -fast adders
+  -multiplication
+  -other representations
+    -fixed point, floating point, BCD, and ASCII
+
+System Design (ch.10)
+-Data path and control circuits
+-Enable outputs onf flipflops and registers
+-SRAM
+-clock synchronization and clock skew
+-flipflop timing parameters
+-Asynchronous inputs and switch debouncing

@@ -1,0 +1,78 @@
+\hypertarget{class_start_checkout_event}{
+\section{StartCheckoutEvent Class Reference}
+\label{class_start_checkout_event}\index{StartCheckoutEvent@{StartCheckoutEvent}}
+}
+Models the situation where a customer is preparing to check out, ie.  
+
+
+Inheritance diagram for StartCheckoutEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_start_checkout_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_start_checkout_event_54269b423446f7a7272c3fb8ac2795ed}{StartCheckoutEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_customer}{Customer} customer, \hyperlink{class_checkout}{Checkout} \hyperlink{class_start_checkout_event_3db09638992a567fbbf7a62e5d877a86}{checkout})
+\begin{CompactList}\small\item\em Construct a new startCheckoutEvent. \item\end{CompactList}\item 
+void \hyperlink{class_start_checkout_event_84fa31ea480e52721e62eee452d87e0e}{action} ()
+\begin{CompactList}\small\item\em The method called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_start_checkout_event_3db09638992a567fbbf7a62e5d877a86}{
+\hyperlink{class_checkout}{Checkout} \hyperlink{class_start_checkout_event_3db09638992a567fbbf7a62e5d877a86}{checkout}}
+\label{class_start_checkout_event_3db09638992a567fbbf7a62e5d877a86}
+
+\begin{CompactList}\small\item\em The checkout this customer is starting checking out at. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the situation where a customer is preparing to check out, ie. 
+
+unloading groceries.
+
+\small\begin{alltt}
+ \hyperlink{class_start_checkout_event}{StartCheckoutEvent}:
+   T self -> \hyperlink{class_checkout_event}{CheckoutEvent} @ t+1
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_start_checkout_event_54269b423446f7a7272c3fb8ac2795ed}{
+\index{StartCheckoutEvent@{StartCheckoutEvent}!StartCheckoutEvent@{StartCheckoutEvent}}
+\index{StartCheckoutEvent@{StartCheckoutEvent}!StartCheckoutEvent@{StartCheckoutEvent}}
+\subsubsection[{StartCheckoutEvent}]{\setlength{\rightskip}{0pt plus 5cm}StartCheckoutEvent::StartCheckoutEvent (int {\em time}, \/  {\bf Customer} {\em customer}, \/  {\bf Checkout} {\em checkout})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_start_checkout_event_54269b423446f7a7272c3fb8ac2795ed}
+
+
+Construct a new startCheckoutEvent. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]time at which this event occurs \item[{\em customer}]customer checking out \item[{\em checkout}]checkout customer is checking out at. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_start_checkout_event_84fa31ea480e52721e62eee452d87e0e}{
+\index{StartCheckoutEvent@{StartCheckoutEvent}!action@{action}}
+\index{action@{action}!StartCheckoutEvent@{StartCheckoutEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void StartCheckoutEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_start_checkout_event_84fa31ea480e52721e62eee452d87e0e}
+
+
+The method called when this event \char`\"{}happens\char`\"{}. 
+
+Just trigger a \hyperlink{class_checkout_event}{CheckoutEvent} at time t+1 \subparagraph*{Externals}
+
+\hyperlink{class_event}{Event}, \hyperlink{class_soopa_store}{SoopaStore}, \hyperlink{class_customer}{Customer}, \hyperlink{class_checkout_event}{CheckoutEvent} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+StartCheckoutEvent.java\end{CompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{class_checkout_event}{
+\section{CheckoutEvent Class Reference}
+\label{class_checkout_event}\index{CheckoutEvent@{CheckoutEvent}}
+}
+Models the situation where a customer is having their items checkout out by a cashier.  
+
+
+Inheritance diagram for CheckoutEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_checkout_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_checkout_event_186ebd3d8ea22f2779526c6633a64b97}{CheckoutEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_customer}{Customer} customer, \hyperlink{class_checkout}{Checkout} \hyperlink{class_checkout_event_dfce79e87746f130c500be6ccdf1ad47}{checkout})
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_checkout_event}{CheckoutEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_checkout_event_cd029a04de786e0d128b3f4220724d4f}{action} ()
+\begin{CompactList}\small\item\em called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_checkout_event_dfce79e87746f130c500be6ccdf1ad47}{
+\hyperlink{class_checkout}{Checkout} \hyperlink{class_checkout_event_dfce79e87746f130c500be6ccdf1ad47}{checkout}}
+\label{class_checkout_event_dfce79e87746f130c500be6ccdf1ad47}
+
+\begin{CompactList}\small\item\em The specific checkout that this event refers to. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the situation where a customer is having their items checkout out by a cashier. 
+
+\small\begin{alltt}
+ \hyperlink{class_checkout_event}{CheckoutEvent}:
+  deQ self from Q
+  T self -> \hyperlink{class_customer_departure_event}{CustomerDepartureEvent} @ t+ceil(items/speed)
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_checkout_event_186ebd3d8ea22f2779526c6633a64b97}{
+\index{CheckoutEvent@{CheckoutEvent}!CheckoutEvent@{CheckoutEvent}}
+\index{CheckoutEvent@{CheckoutEvent}!CheckoutEvent@{CheckoutEvent}}
+\subsubsection[{CheckoutEvent}]{\setlength{\rightskip}{0pt plus 5cm}CheckoutEvent::CheckoutEvent (int {\em time}, \/  {\bf Customer} {\em customer}, \/  {\bf Checkout} {\em checkout})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_event_186ebd3d8ea22f2779526c6633a64b97}
+
+
+Construct a new \hyperlink{class_checkout_event}{CheckoutEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]the time at which this event will occur \item[{\em customer}]the customer checking out \item[{\em checkout}]the checkout they're checking out at. \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer}, \hyperlink{class_checkout}{Checkout} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_checkout_event_cd029a04de786e0d128b3f4220724d4f}{
+\index{CheckoutEvent@{CheckoutEvent}!action@{action}}
+\index{action@{action}!CheckoutEvent@{CheckoutEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void CheckoutEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_checkout_event_cd029a04de786e0d128b3f4220724d4f}
+
+
+called when this event \char`\"{}happens\char`\"{}. 
+
+The customer removes themself from the line and triggers a \hyperlink{class_departure_event}{DepartureEvent} for the time at which they will be done checking out. 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+CheckoutEvent.java\end{CompactItemize}

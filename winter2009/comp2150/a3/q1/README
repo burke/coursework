@@ -1,0 +1,11 @@
+to compile:
+make javac
+
+to run:
+java SoopaStore
+
+documentation is stored in ./html/index.html and can be regenerated with:
+make doc
+
+I didn't have to time to implement a lot of the new stuff for this question, but I refactored my code so it doesn't suck quite as bad and uses a less moronic object hierarchy than last time.
+

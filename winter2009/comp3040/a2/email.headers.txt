@@ -1,0 +1,52 @@
+                                                                                                                                                                                                                                                               
+MIME-Version: 1.0
+Received: by 10.151.11.9 with HTTP; Thu, 26 Feb 2009 10:26:40 -0800 (PST)
+Date: Thu, 26 Feb 2009 12:26:40 -0600
+Delivered-To: burke@burkelibbey.org
+Message-ID: <885b2190902261026n4fe88fb2p6abcb6067f28652e@mail.gmail.com>
+Subject: COMP 3040 Assignment 2
+From: Burke Libbey <burke@burkelibbey.org>
+To: John Braico <jbraico@cs.umanitoba.ca>
+Content-Type: multipart/mixed; boundary=001e680f0e245199740463d67e34
+
+--001e680f0e245199740463d67e34
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Board of Directors,
+
+As you may know, I recently completed the first prototype of our new
+BartenderInTheBox=E2=84=A2 product. We are quite confident that this produc=
+t
+will be ready for release very soon. I've attached a short report
+covering implementation details for your consideration.
+
+The current prototype contains a database of 30,000 mixed drinks and
+12 reservoirs for ingredients. The user will fill each reservoir with
+an ingredient, and input these selections into the software. The
+software then calculates a list of the available drinks, considering a
+drink "available" if every ingredient required to make it is present
+in a reservoir. Once the user selects a drink, the required amount of
+each ingredient is pumped into a glass. We are considering a magnetic
+stirring apparatus for future versions, but it is beyond the scope of
+the current prototype.
+
+The attached report covers the high-level architecture of both the
+software and hardware aspects of this project, going into finer detail
+where appropriate.
+
+Sincerely,
+
+Burke Libbey
+
+(incidentally: http://github.com/burke/bartenderinthebox )
+
+--001e680f0e245199740463d67e34
+Content-Type: application/msword; name="report.doc"
+Content-Disposition: attachment; filename="report.doc"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_frnrkygj0
+
+<snip />
+
+--001e680f0e245199740463d67e34--

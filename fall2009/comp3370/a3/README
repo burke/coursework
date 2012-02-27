@@ -1,0 +1,4 @@
+Sample assembly programs are fibonacci.asm, and bubblesort.asm. These have 
+inline documentation. To compile them, run ./preprocessor <asm>. This is a 
+simple little script I borrowed from Ryan that strips out comments before 
+running the assembler. 

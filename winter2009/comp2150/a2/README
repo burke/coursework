@@ -1,0 +1,5 @@
+I didn't really have time to finish... most of the functionality is there, but none of the summary information is generated, customers don't display the time they spent waiting in line on departure, and there seems to be a couple small timing bugs with cashiers leaving their shifts. 
+
+Anyway, main() is in Main.java.
+
+

@@ -1,0 +1,5 @@
+1)  (several machines organized to share the workload of a task over a network)
+
+2) Distributed computing allows an application to be divided into several components to share processing across a network.
+
+3) In typical programming, an application runs on a single computer, whereas distributed computing allows the programmer to split the workload into multiple pieces across a network. For example, web applications like GMail have components that run both on your own client machine and Google's server machines to perform the task of managing your mail. 

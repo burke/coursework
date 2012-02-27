@@ -1,0 +1,10 @@
+PART A
+Burke Libbey
+
+Our lives today revolve around the internet. More and more of the software we use is hosted on the Web. As the technology to develop Rich Internet Applications (RIAs) continues to mature, we find ourselves using less and less real desktop software.
+
+Google's GMail is a perfect example of this migration toward RIAs and the Web. A decade ago, most people used desktop mail clients like Outlook, since the Web-based interface was slow and clunky. Since then, connection speeds have steadily increased, and the technologies to develop Rich Internet Applications have come a long way. Today, we are in a transitional period where software is steadily migrating off of individual computers and onto the internet. The main enabling technology for this migration so far has been AJAX, which, long story short, enables your browser to keep talking to the server even after your page has finished loading. 
+
+"Why should I care?", you may well be wondering. Well, change is coming. Not long from now, the majority of the software you use will be replaced by RIAs, and with good reason. Consider Microsoft Word versus Google Docs. If your computer gets run over by a bus tomorrow, will you still be able to hand in that paper with the looming deadline? Unless you're one of the select few that actually backs up your data, you're likely in a much better position if you're a Google Docs user. RIAs free us from being tied to a single computer. I've found that actively seeking out Web applications to replace what I've used desktop software for in the past has made me quite a bit more productive in my day-to-day life.
+
+The bottom line is that software is moving to the Web, and the sooner you can get used that that idea, the better off you'll be.

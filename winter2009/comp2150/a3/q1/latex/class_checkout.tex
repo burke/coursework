@@ -1,0 +1,245 @@
+\hypertarget{class_checkout}{
+\section{Checkout Class Reference}
+\label{class_checkout}\index{Checkout@{Checkout}}
+}
+Represents a single \hyperlink{class_checkout}{Checkout} in a Store simulation.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_checkout_13d3d44f84ba45013d54b5a57c0b1d94}{Checkout} (int \hyperlink{class_checkout_af3a8fb83f2076b69307234d7e8fe7e1}{index})
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_checkout}{Checkout}. \item\end{CompactList}\item 
+\hypertarget{class_checkout_f1a2e027703392abec841b38e4b77502}{
+boolean \hyperlink{class_checkout_f1a2e027703392abec841b38e4b77502}{isOpen} ()}
+\label{class_checkout_f1a2e027703392abec841b38e4b77502}
+
+\begin{CompactList}\small\item\em returns a boolean indicating whether or not the checkout is Open \item\end{CompactList}\item 
+\hypertarget{class_checkout_5ea8f962d82f3fa87553df4ccb085be6}{
+int \textbf{getTotalItems} ()}
+\label{class_checkout_5ea8f962d82f3fa87553df4ccb085be6}
+
+\item 
+\hypertarget{class_checkout_8cd0c6c5f213aee6f9d3bc0a8619b861}{
+int \textbf{getNumCustomers} ()}
+\label{class_checkout_8cd0c6c5f213aee6f9d3bc0a8619b861}
+
+\item 
+\hypertarget{class_checkout_93cb8ea2fc194bb6cbd00618ea05c5be}{
+int \textbf{getNumCashiers} ()}
+\label{class_checkout_93cb8ea2fc194bb6cbd00618ea05c5be}
+
+\item 
+\hypertarget{class_checkout_ef8c06214ba64e51382e5f28dcb3d5e4}{
+int \textbf{getTimeStaffed} ()}
+\label{class_checkout_ef8c06214ba64e51382e5f28dcb3d5e4}
+
+\item 
+void \hyperlink{class_checkout_f4ff6004dc1e5848236915d97fe9f023}{setOpen} (boolean \hyperlink{class_checkout_d85ffcc88f238ab5d7f2b5f27558178d}{open})
+\begin{CompactList}\small\item\em change the openness state of the checkout \item\end{CompactList}\item 
+void \hyperlink{class_checkout_4caefc9df80b65941d7ab1a32c274366}{setCheckingOut} (\hyperlink{class_customer}{Customer} customer)
+\begin{CompactList}\small\item\em Allow a customer to check out. \item\end{CompactList}\item 
+\hyperlink{class_customer}{Customer} \hyperlink{class_checkout_34ad05140dec86ca8726f703075a2f20}{getCheckingOut} ()
+\begin{CompactList}\small\item\em Returns the customer that is currently checking out at this checkout. \item\end{CompactList}\item 
+\hypertarget{class_checkout_20206bf51cc442d00d5c06ef3fa3bfb9}{
+int \hyperlink{class_checkout_20206bf51cc442d00d5c06ef3fa3bfb9}{getIndex} ()}
+\label{class_checkout_20206bf51cc442d00d5c06ef3fa3bfb9}
+
+\begin{CompactList}\small\item\em returns the number of this checkout (think numbered signs) \item\end{CompactList}\item 
+int \hyperlink{class_checkout_ef70434478cfa2809da9b161751c522f}{getLength} ()
+\begin{CompactList}\small\item\em Return the number of people waiting in line at this checkout. \item\end{CompactList}\item 
+void \hyperlink{class_checkout_2e38f69374aaa88101b7acb54c326823}{getInLine} (\hyperlink{class_customer}{Customer} customer)
+\begin{CompactList}\small\item\em Put a customer at the back of the line at this checkout. \item\end{CompactList}\item 
+\hyperlink{class_customer}{Customer} \hyperlink{class_checkout_a54ef065c4835713f1352c7ae2441b26}{firstInLine} ()
+\begin{CompactList}\small\item\em returns the \hyperlink{class_customer}{Customer} at the front of the line. \item\end{CompactList}\item 
+\hyperlink{class_customer}{Customer} \hyperlink{class_checkout_d18d76d878a58d31583da42adc2c3777}{moveLine} ()
+\begin{CompactList}\small\item\em Move the line ahead. \item\end{CompactList}\item 
+void \hyperlink{class_checkout_1ebc3d36b7c8c4a55b86e70f6054c0b1}{setCashier} (\hyperlink{class_cashier}{Cashier} \hyperlink{class_checkout_5b3b71b8c2bbff1deb8481f7f29f0dbb}{cashier})
+\begin{CompactList}\small\item\em Called when a new cashier comes to this checkout. \item\end{CompactList}\item 
+\hypertarget{class_checkout_4d61b4e6ad5021613e6399f2acf89cff}{
+\hyperlink{class_cashier}{Cashier} \hyperlink{class_checkout_4d61b4e6ad5021613e6399f2acf89cff}{getCashier} ()}
+\label{class_checkout_4d61b4e6ad5021613e6399f2acf89cff}
+
+\begin{CompactList}\small\item\em returns the \hyperlink{class_cashier}{Cashier} currently working this checkout \item\end{CompactList}\item 
+\hypertarget{class_checkout_45374e5185ff75a871a1500c9f3e37e9}{
+boolean \hyperlink{class_checkout_45374e5185ff75a871a1500c9f3e37e9}{hasCashier} ()}
+\label{class_checkout_45374e5185ff75a871a1500c9f3e37e9}
+
+\begin{CompactList}\small\item\em Returns a boolean value indicating whether or not there is currently an employee working this checkout. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_checkout_66f90b2bca04022a54e5179f8f60dd8b}{
+\hyperlink{class_queue}{Queue} \hyperlink{class_checkout_66f90b2bca04022a54e5179f8f60dd8b}{customerLine}}
+\label{class_checkout_66f90b2bca04022a54e5179f8f60dd8b}
+
+\begin{CompactList}\small\item\em Line of customers waiting to checko out here. \item\end{CompactList}\item 
+\hypertarget{class_checkout_5b3b71b8c2bbff1deb8481f7f29f0dbb}{
+\hyperlink{class_cashier}{Cashier} \hyperlink{class_checkout_5b3b71b8c2bbff1deb8481f7f29f0dbb}{cashier}}
+\label{class_checkout_5b3b71b8c2bbff1deb8481f7f29f0dbb}
+
+\begin{CompactList}\small\item\em \hyperlink{class_cashier}{Cashier} currently serving customers at this checkout. \item\end{CompactList}\item 
+\hypertarget{class_checkout_af3a8fb83f2076b69307234d7e8fe7e1}{
+int \hyperlink{class_checkout_af3a8fb83f2076b69307234d7e8fe7e1}{index}}
+\label{class_checkout_af3a8fb83f2076b69307234d7e8fe7e1}
+
+\begin{CompactList}\small\item\em Index into checkouts\mbox{[}\mbox{]} array. \item\end{CompactList}\item 
+\hypertarget{class_checkout_b715f220f3eae0111db07f5ef9e7e812}{
+\hyperlink{class_customer}{Customer} \hyperlink{class_checkout_b715f220f3eae0111db07f5ef9e7e812}{checkingOut}}
+\label{class_checkout_b715f220f3eae0111db07f5ef9e7e812}
+
+\begin{CompactList}\small\item\em Currently checking-out customer. \item\end{CompactList}\item 
+\hypertarget{class_checkout_d85ffcc88f238ab5d7f2b5f27558178d}{
+boolean \hyperlink{class_checkout_d85ffcc88f238ab5d7f2b5f27558178d}{open}}
+\label{class_checkout_d85ffcc88f238ab5d7f2b5f27558178d}
+
+\begin{CompactList}\small\item\em True if there's nobody checking out or standing in line here. \item\end{CompactList}\item 
+\hypertarget{class_checkout_3c125bd8b5e7cbe92a492b49068b9f46}{
+int \textbf{timeStaffed}}
+\label{class_checkout_3c125bd8b5e7cbe92a492b49068b9f46}
+
+\item 
+\hypertarget{class_checkout_ffa8c25957072d446633a3fa2f57a296}{
+int \textbf{staffedSince} = -1}
+\label{class_checkout_ffa8c25957072d446633a3fa2f57a296}
+
+\item 
+\hypertarget{class_checkout_4bebc3da587be865fa8f9ad2891070c4}{
+int \textbf{numCashiers} = 0}
+\label{class_checkout_4bebc3da587be865fa8f9ad2891070c4}
+
+\item 
+\hypertarget{class_checkout_ff94cdb4666415041f5e4a14fa1a2f63}{
+int \textbf{numCustomers} = 0}
+\label{class_checkout_ff94cdb4666415041f5e4a14fa1a2f63}
+
+\item 
+\hypertarget{class_checkout_dc677e1570c3b3a86f9a08055fd5aa91}{
+int \textbf{totalItems} = 0}
+\label{class_checkout_dc677e1570c3b3a86f9a08055fd5aa91}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a single \hyperlink{class_checkout}{Checkout} in a Store simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_checkout_13d3d44f84ba45013d54b5a57c0b1d94}{
+\index{Checkout@{Checkout}!Checkout@{Checkout}}
+\index{Checkout@{Checkout}!Checkout@{Checkout}}
+\subsubsection[{Checkout}]{\setlength{\rightskip}{0pt plus 5cm}Checkout::Checkout (int {\em index})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_13d3d44f84ba45013d54b5a57c0b1d94}
+
+
+Construct a new \hyperlink{class_checkout}{Checkout}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]this checkout's number (think of the numbered signs) \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_queue}{Queue} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_checkout_a54ef065c4835713f1352c7ae2441b26}{
+\index{Checkout@{Checkout}!firstInLine@{firstInLine}}
+\index{firstInLine@{firstInLine}!Checkout@{Checkout}}
+\subsubsection[{firstInLine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Customer} Checkout::firstInLine ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_a54ef065c4835713f1352c7ae2441b26}
+
+
+returns the \hyperlink{class_customer}{Customer} at the front of the line. 
+
+\hypertarget{class_checkout_34ad05140dec86ca8726f703075a2f20}{
+\index{Checkout@{Checkout}!getCheckingOut@{getCheckingOut}}
+\index{getCheckingOut@{getCheckingOut}!Checkout@{Checkout}}
+\subsubsection[{getCheckingOut}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Customer} Checkout::getCheckingOut ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_34ad05140dec86ca8726f703075a2f20}
+
+
+Returns the customer that is currently checking out at this checkout. 
+
+\hypertarget{class_checkout_2e38f69374aaa88101b7acb54c326823}{
+\index{Checkout@{Checkout}!getInLine@{getInLine}}
+\index{getInLine@{getInLine}!Checkout@{Checkout}}
+\subsubsection[{getInLine}]{\setlength{\rightskip}{0pt plus 5cm}void Checkout::getInLine ({\bf Customer} {\em customer})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_2e38f69374aaa88101b7acb54c326823}
+
+
+Put a customer at the back of the line at this checkout. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em customer}]the \hyperlink{class_customer}{Customer} object to put in line \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer} \hypertarget{class_checkout_ef70434478cfa2809da9b161751c522f}{
+\index{Checkout@{Checkout}!getLength@{getLength}}
+\index{getLength@{getLength}!Checkout@{Checkout}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}int Checkout::getLength ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_ef70434478cfa2809da9b161751c522f}
+
+
+Return the number of people waiting in line at this checkout. 
+
+\hypertarget{class_checkout_d18d76d878a58d31583da42adc2c3777}{
+\index{Checkout@{Checkout}!moveLine@{moveLine}}
+\index{moveLine@{moveLine}!Checkout@{Checkout}}
+\subsubsection[{moveLine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Customer} Checkout::moveLine ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_d18d76d878a58d31583da42adc2c3777}
+
+
+Move the line ahead. 
+
+Remove the front person from the list, as they've already started checking out.
+
+\subparagraph*{Externals}
+
+\hyperlink{class_customer}{Customer} \hypertarget{class_checkout_1ebc3d36b7c8c4a55b86e70f6054c0b1}{
+\index{Checkout@{Checkout}!setCashier@{setCashier}}
+\index{setCashier@{setCashier}!Checkout@{Checkout}}
+\subsubsection[{setCashier}]{\setlength{\rightskip}{0pt plus 5cm}void Checkout::setCashier ({\bf Cashier} {\em cashier})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_1ebc3d36b7c8c4a55b86e70f6054c0b1}
+
+
+Called when a new cashier comes to this checkout. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cashier}]the \hyperlink{class_cashier}{Cashier} that will work this checkout. \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_cashier}{Cashier} \hypertarget{class_checkout_4caefc9df80b65941d7ab1a32c274366}{
+\index{Checkout@{Checkout}!setCheckingOut@{setCheckingOut}}
+\index{setCheckingOut@{setCheckingOut}!Checkout@{Checkout}}
+\subsubsection[{setCheckingOut}]{\setlength{\rightskip}{0pt plus 5cm}void Checkout::setCheckingOut ({\bf Customer} {\em customer})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_4caefc9df80b65941d7ab1a32c274366}
+
+
+Allow a customer to check out. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em customer}]the \hyperlink{class_customer}{Customer} at the head of the line that should check out. \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer} \hypertarget{class_checkout_f4ff6004dc1e5848236915d97fe9f023}{
+\index{Checkout@{Checkout}!setOpen@{setOpen}}
+\index{setOpen@{setOpen}!Checkout@{Checkout}}
+\subsubsection[{setOpen}]{\setlength{\rightskip}{0pt plus 5cm}void Checkout::setOpen (boolean {\em open})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_checkout_f4ff6004dc1e5848236915d97fe9f023}
+
+
+change the openness state of the checkout 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em open}]boolean value -- should checkout be open? \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Checkout.java\end{CompactItemize}

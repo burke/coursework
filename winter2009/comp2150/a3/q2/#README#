@@ -1,0 +1,8 @@
+To compile:
+make soopastore
+
+To run:
+./soopastore
+
+Documentation is located at ./html/index.html and can be regenerated with
+make doc

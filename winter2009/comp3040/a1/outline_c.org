@@ -1,0 +1,8 @@
+OUTLINE C
+Burke Libbey
+
+- Technology is finally there to develop RIAs (browser JS engines, etc.)
+- "Future of the Web" used to be Flash, now it's JavaScript. 
+- RIAs are starting to be competitive with Desktop Apps. 
+- Explain SproutCore, eg. processing on the client side.
+- Learn javascript!

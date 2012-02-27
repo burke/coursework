@@ -1,0 +1,55 @@
+
+
+\documentclass[10pt,letterpaper]{article}
+
+\begin{document}
+
+\author{Burke Libbey \\ 6840752}
+\title{ECE 3700: Assignment 3}
+\date{\today}
+
+\maketitle
+
+
+\noindent Time to send one packet:
+\[ t_{total} = t_{trans} + t_{prop} \]
+\[ t_{prop} = \frac{L}{\frac{2}{3}c} = 0.030321 \]
+\[ t_{trans,10Kb} = \frac{F}{B} = 2(\frac{10}{1024} + \frac{10}{102400}) = 0.019727 \]
+
+\[ t_{trans,1Kb} = \frac{F}{B} = 2(\frac{10}{1024} + \frac{10}{102400}) = 0.001973 \]
+
+\[ t_{total,10Kb} = 0.30321 + 0.019727 = 0.0500 \]
+\[ t_{total,1Kb} = 0.30321 + 0.001973 = 0.0322 \]
+
+\subsection*{Using Stop/Wait}
+
+\noindent Number of packets to send:
+\[ N_{data} = N_{ack} = \frac{10\mbox{MB}}{10\mbox{Kb}} = 8000 \]
+
+
+\noindent Total Time:
+\[ N_{data} * t_{total,10Kb} + N_{ack} * t_{total,1Kb} = 658 \mbox{~seconds} \]
+
+\[ Rate = 8192*\frac{10\mbox{MB}}{658s} = 124\mbox{~Kbps}  \]
+
+\newpage
+\subsection*{Using Window Flow Control}
+
+\noindent  Time to send four data packets:
+\[ t_{total,4*10Kb} = (4 * t_{trans,10Kb}) + t_{prop} = 0.038212 \]
+
+\noindent  Time until last packet is acknowledged after last packet sent:
+\[ t_{total,1Kb} = 0.0322 \]
+
+\noindent Finally, 
+\[ t_{total} = \frac{8000}{4} * (t_{total,4*10Kb}+t_{total,1Kb}) = 141 \mbox{~seconds} \]
+
+\[ Rate = 8192*\frac{10\mbox{MB}}{141s} = 581\mbox{~Kbps}  \]
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

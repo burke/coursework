@@ -1,0 +1,7 @@
+task :doc do
+
+  rdoc = `which hanna` ? 'hanna' : 'rdoc'
+  system "rm -r doc"
+  system "#{rdoc} main.rb lib/*.rb -x doc --force-update"
+
+end

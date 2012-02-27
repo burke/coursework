@@ -1,0 +1,11 @@
+Dear ____________,
+
+As you may know, I recently completed the first prototype of our new BartenderInTheBox™ product. We are quite confident that this product will be ready for release very soon. I've attached a short report covering implementation details for your consideration.
+
+The current prototype contains a database of 30,000 mixed drinks and 12 reservoirs for ingredients. The user will fill each reservoir with an ingredient, and input these selections into the software. The software then calculates a list of the available drinks, considering a drink "available" if every ingredient required to make it is present in a reservoir. Once the user selects a drink, the required amount of each ingredient is pumped into a glass. We are considering a magnetic stirring apparatus for future versions, but it is beyond the scope of the current prototype.
+
+The attached report covers the high-level architecture of both the software and hardware aspects of this project, going into finer detail where appropriate.
+
+Sincerely,
+
+Burke Libbey

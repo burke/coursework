@@ -1,0 +1,93 @@
+\hypertarget{class_ordered_list}{
+\section{OrderedList Class Reference}
+\label{class_ordered_list}\index{OrderedList@{OrderedList}}
+}
+A sorted linked list.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_ordered_list_f5ee8de5685273568603e1cb63e19195}{insertInOrder} (\hyperlink{class_sortable_object}{SortableObject} data)
+\begin{CompactList}\small\item\em Inserts an item into the correct (sorted) position in the list (uses helper method). \item\end{CompactList}\item 
+void \hyperlink{class_ordered_list_8d86cb6f2ce66b3565929493e055cc09}{insertInOrder} (\hyperlink{class_sortable_object}{SortableObject} data, \hyperlink{class_node}{Node} curr)
+\begin{CompactList}\small\item\em Inserts an item into the correct (sorted) position in the list (recursive helper method). \item\end{CompactList}\item 
+\hypertarget{class_ordered_list_92eb9493a7ce5c3265237a3e6995dff2}{
+\hyperlink{class_sortable_object}{SortableObject} \textbf{peekFirst} ()}
+\label{class_ordered_list_92eb9493a7ce5c3265237a3e6995dff2}
+
+\item 
+\hypertarget{class_ordered_list_a114c9a80c3f1ef5b034cb3bd40a763b}{
+Boolean \hyperlink{class_ordered_list_a114c9a80c3f1ef5b034cb3bd40a763b}{isEmpty} ()}
+\label{class_ordered_list_a114c9a80c3f1ef5b034cb3bd40a763b}
+
+\begin{CompactList}\small\item\em Determines whether or not the list contains more data. \item\end{CompactList}\item 
+\hypertarget{class_ordered_list_237f65c54c7e71dc8350c60e51c09c3f}{
+int \hyperlink{class_ordered_list_237f65c54c7e71dc8350c60e51c09c3f}{size} ()}
+\label{class_ordered_list_237f65c54c7e71dc8350c60e51c09c3f}
+
+\begin{CompactList}\small\item\em Return the size of this list. \item\end{CompactList}\item 
+\hypertarget{class_ordered_list_a3941ce1a3f68a78408182cee76f4353}{
+\hyperlink{class_sortable_object}{SortableObject} \hyperlink{class_ordered_list_a3941ce1a3f68a78408182cee76f4353}{removeFirst} ()}
+\label{class_ordered_list_a3941ce1a3f68a78408182cee76f4353}
+
+\begin{CompactList}\small\item\em Removes and returns the element at the front of the list. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A sorted linked list. 
+
+Manages a sorted linked list of arbitrary data type.
+
+\subparagraph*{Output}
+
+Can print a representation of the list's contents \subparagraph*{Externals}
+
+\hyperlink{class_node}{Node} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ordered_list_8d86cb6f2ce66b3565929493e055cc09}{
+\index{OrderedList@{OrderedList}!insertInOrder@{insertInOrder}}
+\index{insertInOrder@{insertInOrder}!OrderedList@{OrderedList}}
+\subsubsection[{insertInOrder}]{\setlength{\rightskip}{0pt plus 5cm}void OrderedList::insertInOrder ({\bf SortableObject} {\em data}, \/  {\bf Node} {\em curr})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_ordered_list_8d86cb6f2ce66b3565929493e055cc09}
+
+
+Inserts an item into the correct (sorted) position in the list (recursive helper method). 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]The data to be inserted \item[{\em curr}]The current \hyperlink{class_node}{Node} in the sequence being compared against \end{description}
+\end{Desc}
+
+
+If we've reached the end of the list, add the \hyperlink{class_node}{Node} to the end.
+
+If the Node-to-insert comes before curr's successor, insert.
+
+Otherwise, Recurse with curr = curr.getNext() \hypertarget{class_ordered_list_f5ee8de5685273568603e1cb63e19195}{
+\index{OrderedList@{OrderedList}!insertInOrder@{insertInOrder}}
+\index{insertInOrder@{insertInOrder}!OrderedList@{OrderedList}}
+\subsubsection[{insertInOrder}]{\setlength{\rightskip}{0pt plus 5cm}void OrderedList::insertInOrder ({\bf SortableObject} {\em data})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_ordered_list_f5ee8de5685273568603e1cb63e19195}
+
+
+Inserts an item into the correct (sorted) position in the list (uses helper method). 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]The item to be inserted \end{description}
+\end{Desc}
+
+
+If the list is empty, set front to a new node containing this data.
+
+If there is data, but this item should come before front, reset front to this item.
+
+Otherwise, begin iterating through the list to find the correct insertion index. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+OrderedList.java\end{CompactItemize}

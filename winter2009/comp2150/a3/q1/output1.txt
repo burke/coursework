@@ -1,0 +1,122 @@
+Please enter input file name:
+data1.txt
+Welcome to SoopaStore!
+
+Time 1: Cashier 20 arrives (Speed 8, quitting time 19, checkout 0)
+Time 1: Cashier 12 arrives (Speed 6, quitting time 10, checkout 1)
+Time 1: Customer 42 arrives (10 items, Patience 2, checkout 0)
+Time 1: Customer 43 arrives (10 items, Patience 2, checkout 1)
+Time 1: Customer 44 arrives (10 items, Patience 1, checkout 0)
+Time 1: Customer 45 arrives (10 items, Patience 2, checkout 1)
+Time 2: Customer 42 starts checkout (#0, speed 8, will take 2 units)
+Time 2: Customer 43 starts checkout (#1, speed 6, will take 2 units)
+Time 2: Customer 46 arrives (59 items, Patience 1, checkout 0)
+Time 2: Customer 47 arrives (62 items, Patience 3, checkout 1)
+Time 2: Customer 48 arrives (67 items, Patience 2, checkout 0)
+Time 2: Customer 49 arrives (47 items, Patience 3, checkout 1)
+Time 2: Customer 50 arrives (48 items, Patience 3, checkout 0)
+Time 4: Customer 42 departs (spent 0 units waiting)
+Time 4: Customer 43 departs (spent 0 units waiting)
+Time 5: Cashier 21 arrives (Speed 7, quitting time 30, checkout 2)
+Time 5: Customer 44 starts checkout (#0, speed 8, will take 2 units)
+Time 5: Customer 45 starts checkout (#1, speed 6, will take 2 units)
+Time 5: Customer 51 arrives (48 items, Patience 1, checkout 2)
+Time 6: Customer 51 starts checkout (#2, speed 7, will take 7 units)
+Time 6: Customer 52 arrives (49 items, Patience 1, checkout 2)
+Time 6: Customer 53 arrives (10 items, Patience 2, checkout 2)
+Time 6: Customer 54 arrives (8 items, Patience 2, checkout 1)
+Time 6: Customer 55 arrives (8 items, Patience 3, checkout 2)
+Time 7: Customer 44 departs (spent 3 units waiting)
+Time 7: Customer 45 departs (spent 3 units waiting)
+Time 8: Cashier 22 arrives (Speed 5, quitting time 30, checkout 3)
+Time 8: Customer 46 starts checkout (#0, speed 8, will take 8 units)
+Time 8: Customer 47 starts checkout (#1, speed 6, will take 11 units)
+Time 9: Customer 56 arrives (87 items, Patience 1, checkout 3)
+Time 9: Customer 57 arrives (49 items, Patience 1, checkout 3)
+Time 9: Customer 58 arrives (38 items, Patience 3, checkout 3)
+Time 10: Cashier 12 closes checkout 1 (cust. 47 will be completed)
+Time 10: Customer 56 starts checkout (#3, speed 5, will take 18 units)
+Time 10: Customer 59 arrives (109 items, Patience 2, checkout 0)
+Time 11: Customer 49 moves to checkout 3 (forced)
+Time 11: Customer 54 moves to checkout 0 (forced)
+Time 12: Customer 60 arrives (9 items, Patience 2, checkout 2)
+Time 12: Customer 61 arrives (10 items, Patience 2, checkout 3)
+Time 13: Customer 51 departs (spent 0 units waiting)
+Time 14: Customer 52 starts checkout (#2, speed 7, will take 7 units)
+Time 16: Customer 46 departs (spent 5 units waiting)
+Time 17: Customer 48 starts checkout (#0, speed 8, will take 9 units)
+Time 18: Customer 62 arrives (10 items, Patience 1, checkout 0)
+Time 19: Cashier 20 closes checkout 0 (cust. 48 will be completed)
+Time 19: Customer 47 departs (spent 5 units waiting)
+Time 20: Cashier 27 arrives (Speed 3, quitting time 130, checkout 4)
+Time 20: Customer 50 moves to checkout 4 (forced)
+Time 20: Customer 54 moves to checkout 4 (forced)
+Time 20: Customer 59 moves to checkout 4 (forced)
+Time 20: Customer 62 moves to checkout 4 (forced)
+Time 21: Cashier 12 leaves checkout 1 (worked 20 time units)
+Time 21: Customer 50 starts checkout (#4, speed 3, will take 16 units)
+Time 21: Customer 52 departs (spent 7 units waiting)
+Time 21: Customer 63 arrives (10 items, Patience 3, checkout 2)
+Time 22: Customer 53 starts checkout (#2, speed 7, will take 2 units)
+Time 24: Customer 53 departs (spent 15 units waiting)
+Time 25: Customer 55 starts checkout (#2, speed 7, will take 2 units)
+Time 26: Customer 48 departs (spent 14 units waiting)
+Time 27: Customer 55 departs (spent 18 units waiting)
+Time 28: Cashier 20 leaves checkout 0 (worked 27 time units)
+Time 28: Customer 56 departs (spent 0 units waiting)
+Time 28: Customer 60 starts checkout (#2, speed 7, will take 2 units)
+Time 29: Customer 57 starts checkout (#3, speed 5, will take 10 units)
+Time 30: Cashier 21 closes checkout 2 (cust. 60 will be completed)
+Time 30: Cashier 22 closes checkout 3 (cust. 57 will be completed)
+Time 30: Customer 60 departs (spent 15 units waiting)
+Time 31: Customer 49 moves to checkout 4 (forced)
+Time 31: Customer 58 moves to checkout 4 (forced)
+Time 31: Customer 61 moves to checkout 4 (forced)
+Time 31: Customer 63 moves to checkout 4 (forced)
+Time 32: Cashier 21 leaves checkout 2 (worked 27 time units)
+Time 37: Customer 50 departs (spent 18 units waiting)
+Time 38: Customer 54 starts checkout (#4, speed 3, will take 3 units)
+Time 39: Customer 57 departs (spent 19 units waiting)
+Time 41: Customer 54 departs (spent 31 units waiting)
+Time 42: Cashier 22 leaves checkout 3 (worked 34 time units)
+Time 42: Customer 59 starts checkout (#4, speed 3, will take 37 units)
+Time 79: Customer 59 departs (spent 31 units waiting)
+Time 80: Customer 62 starts checkout (#4, speed 3, will take 4 units)
+Time 84: Customer 62 departs (spent 61 units waiting)
+Time 85: Customer 49 starts checkout (#4, speed 3, will take 16 units)
+Time 101: Customer 49 departs (spent 82 units waiting)
+Time 102: Customer 58 starts checkout (#4, speed 3, will take 13 units)
+Time 115: Customer 58 departs (spent 92 units waiting)
+Time 116: Customer 61 starts checkout (#4, speed 3, will take 4 units)
+Time 120: Customer 61 departs (spent 103 units waiting)
+Time 121: Customer 63 starts checkout (#4, speed 3, will take 4 units)
+Time 125: Customer 63 departs (spent 99 units waiting)
+Time 130: Cashier 27 closes checkout 4 (no remaining customers in line)
+Time 131: Cashier 27 leaves checkout 4 (worked 111 time units)
+
+...All events complete.  Final Summary:
+
+Cashier Information:
+
+      ID    Start     Quit        Time    Time    Speed   Customers    Items
+  Number     Time     Time      Worked    Idle               Served   Packed
+----------------------------------------------------------------------------
+       0        0        0           0        0       0           0        0
+
+Checkout Information:
+
+Checkout     Time    Total       Total    Total
+  Number  Staffed  Workers   Customers    Items
+-----------------------------------------------
+       0       27        1           4      292
+       1       20        1           3      164
+       2       32        1           5      248
+       3       34        1           2      272
+       4      111        1           8      560
+       5        0        0           0        0
+       6        0        0           0        0
+       7        0        0           0        0
+
+Customers processed in total: 
+Average waiting time per customer : 
+End of Processing

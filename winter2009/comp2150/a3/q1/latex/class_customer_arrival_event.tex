@@ -1,0 +1,74 @@
+\hypertarget{class_customer_arrival_event}{
+\section{CustomerArrivalEvent Class Reference}
+\label{class_customer_arrival_event}\index{CustomerArrivalEvent@{CustomerArrivalEvent}}
+}
+Models the arrival of a customer in an event-based simulation.  
+
+
+Inheritance diagram for CustomerArrivalEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{class_customer_arrival_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_customer_arrival_event_c9ca7779a23715f631b7764e047d270a}{CustomerArrivalEvent} (int arrival, \hyperlink{class_customer}{Customer} customer)
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_customer_arrival_event}{CustomerArrivalEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_customer_arrival_event_70898c7fa4f92abf462e03b1cd76756b}{action} ()
+\begin{CompactList}\small\item\em called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the arrival of a customer in an event-based simulation. 
+
+\small\begin{alltt}
+ \hyperlink{class_customer_arrival_event}{CustomerArrivalEvent}:
+   choose Line
+   if Line.empty?:
+     T self -> \hyperlink{class_start_checkout_event}{StartCheckoutEvent} @ t+1
+   else:
+     self -> Q
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_customer_arrival_event_c9ca7779a23715f631b7764e047d270a}{
+\index{CustomerArrivalEvent@{CustomerArrivalEvent}!CustomerArrivalEvent@{CustomerArrivalEvent}}
+\index{CustomerArrivalEvent@{CustomerArrivalEvent}!CustomerArrivalEvent@{CustomerArrivalEvent}}
+\subsubsection[{CustomerArrivalEvent}]{\setlength{\rightskip}{0pt plus 5cm}CustomerArrivalEvent::CustomerArrivalEvent (int {\em arrival}, \/  {\bf Customer} {\em customer})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_customer_arrival_event_c9ca7779a23715f631b7764e047d270a}
+
+
+Construct a new \hyperlink{class_customer_arrival_event}{CustomerArrivalEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arrival}]the time at which the customer arrives \item[{\em customer}]the customer arriving \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_customer_arrival_event_70898c7fa4f92abf462e03b1cd76756b}{
+\index{CustomerArrivalEvent@{CustomerArrivalEvent}!action@{action}}
+\index{action@{action}!CustomerArrivalEvent@{CustomerArrivalEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void CustomerArrivalEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_customer_arrival_event_70898c7fa4f92abf462e03b1cd76756b}
+
+
+called when this event \char`\"{}happens\char`\"{}. 
+
+The customer first chooses the \char`\"{}best\char`\"{} checkout line, then either starts checking out or waits in line.
+
+\subparagraph*{Externals}
+
+requires \hyperlink{class_checkout}{Checkout}, \hyperlink{class_customer}{Customer}, \hyperlink{class_start_checkout_event}{StartCheckoutEvent} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+CustomerArrivalEvent.java\end{CompactItemize}

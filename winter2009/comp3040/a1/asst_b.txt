@@ -1,0 +1,16 @@
+PART B
+Burke Libbey
+
+Hey Bob,
+
+I've overheard some of the IT guys complaining about our Exchange server these past few weeks, and given the number of times it's crashed on us recently, I figured I'd offer a suggestion.
+
+Google offers a service called Google Apps For Your Domain, where you can register with a domain name and essentially get your own GMail, Google Calendar, Docs, and so on. It's free, or we could pay for the enterprisey non-upgrade if that helps get it past management. 
+
+We seem to be in a bit of a transition period right now where most software is starting to be replaced by Rich Internet Applications like the Google Apps suite. The technology is finally there to support it, and there are some pretty distinct benefits to relying less on desktop software. Notably, a decreased burden on your IT guys to fix problems with Outlook, and less reliance on specific users' computers, so if a hard drive dies, the victim can be back up and running again the same day. 
+
+I know that historically, the main factor tying us to Exchange has been the company-wide calendaring and mail integration, but Google Apps supports a pretty similar feature set now. If we can convince people that they really don't need Outlook, and that a fancy Web interface is just as good, I think our whole organization could operate much more smoothly.
+
+Anyway, just something to think about. I'll get you a paper copy of this in case the Exchange server flakes out again.
+
+-Burke

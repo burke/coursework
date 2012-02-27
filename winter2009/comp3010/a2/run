@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << File.join(File.dirname(__FILE__),"lib")
+
+require 'rack'
+require 'cloudkit'
+
+app = Rack::Builder.new do
+  use CloudKit::Service, :collections => [:events, :users]
+
+  use Rack::Static, :urls => ["/assets", "/index.html"], :root => File.join(File.dirname(__FILE__),"public")
+  run (lambda do |env|
+    if env["PATH_INFO"] == "/"
+      # Redirect to index.html.
+      [301, {"Location" => "index.html", "Content-Type" => "text/html", "Content-Length" => "0"}, []]
+    else
+      # Not found.
+      [404, {"Content-Type" => "text/html", "Content-Length" => "9"}, ["Not Found"]]
+    end
+  end)
+end
+
+Rack::Handler::WEBrick.run app, :Port => 15021

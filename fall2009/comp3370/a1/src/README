@@ -1,0 +1,3 @@
+Well, I had most of this stuff working, then I added more error codes on saturday night, and broke other stuff. As a result, it's not *quite* working anymore, and it's Thanksgiving. I suspect it's some problem with the way I'm handling memory out-of-bounds accesses. Anyway, it's close, and I promise it _was_ working...
+
+

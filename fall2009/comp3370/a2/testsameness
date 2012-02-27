@@ -1,0 +1,5 @@
+#!/bin/sh
+./simulator_no_cache $1 $2 > o1.txt
+./simulator $1 $2 > o2.txt
+diff o1.txt o2.txt
+

@@ -1,0 +1,44 @@
+~ % traceroute google.com
+traceroute: Warning: google.com has multiple addresses; using 64.233.167.99
+traceroute to google.com (64.233.167.99), 64 hops max, 40 byte packets
+ 1  DD-WRT (192.168.1.1)  3293.861 ms  0.988 ms  0.838 ms
+ 2  142.161.5.195 (142.161.5.195)  29.382 ms  29.637 ms  29.334 ms
+ 3  wnpgmb0121w-dr02-v955.mts.net (142.161.5.34)  29.038 ms  29.013 ms  39.685 ms
+ 4  wnpgmb0125w-cr02-v921.mts.net (142.161.4.2)  30.048 ms wnpgmb0125w-cr02-v923.mts.net (142.161.4.34)  29.975 ms wnpgmb0125w-cr02-v921.mts.net (142.161.4.2)  29.127 ms
+ 5  209.112.55.113 (209.112.55.113)  30.616 ms  28.669 ms  29.398 ms
+ 6  ge6-0.gwy2-tor.bb.allstream.net (199.212.161.174)  54.417 ms  61.888 ms  54.000 ms
+ 7  gw-google.torontointernetxchange.net (198.32.245.6)  54.551 ms  55.585 ms  54.410 ms
+ 8  209.85.250.111 (209.85.250.111)  64.502 ms  67.337 ms  64.267 ms
+ 9  72.14.238.90 (72.14.238.90)  65.409 ms  65.450 ms  65.267 ms
+10  72.14.232.74 (72.14.232.74)  67.052 ms 64.233.175.42 (64.233.175.42)  76.191 ms  73.924 ms
+11  py-in-f99.google.com (64.233.167.99)  66.354 ms  65.583 ms  65.823 ms
+~ % traceroute google.com
+traceroute: Warning: google.com has multiple addresses; using 64.233.167.99
+traceroute to google.com (64.233.167.99), 64 hops max, 40 byte packets
+ 1  DD-WRT (192.168.1.1)  1.108 ms  0.711 ms  0.642 ms
+ 2  142.161.5.195 (142.161.5.195)  29.091 ms  29.533 ms  29.125 ms
+ 3  wnpgmb0121w-dr02-v955.mts.net (142.161.5.34)  29.323 ms  29.026 ms  29.235 ms
+ 4  wnpgmb0125w-cr02-v921.mts.net (142.161.4.2)  29.482 ms wnpgmb0125w-cr02-v923.mts.net (142.161.4.34)  30.434 ms wnpgmb0125w-cr02-v921.mts.net (142.161.4.2)  29.150 ms
+ 5  209.112.55.113 (209.112.55.113)  29.212 ms  29.430 ms  33.497 ms
+ 6  ge6-0.gwy2-tor.bb.allstream.net (199.212.161.174)  54.630 ms  54.238 ms  54.548 ms
+ 7  gw-google.torontointernetxchange.net (198.32.245.6)  54.269 ms  54.432 ms  54.355 ms
+ 8  209.85.250.111 (209.85.250.111)  64.385 ms  64.360 ms  69.240 ms
+ 9  72.14.238.90 (72.14.238.90)  65.339 ms  65.343 ms  65.471 ms
+10  64.233.175.42 (64.233.175.42)  65.662 ms 72.14.232.74 (72.14.232.74)  74.333 ms  76.084 ms
+11  py-in-f99.google.com (64.233.167.99)  65.603 ms  66.278 ms  65.933 ms
+~ % 
+~ % traceroute google.com
+traceroute: Warning: google.com has multiple addresses; using 72.14.207.99
+traceroute to google.com (72.14.207.99), 64 hops max, 40 byte packets
+ 1  DD-WRT (192.168.1.1)  2.562 ms  0.741 ms  0.662 ms
+ 2  142.161.5.195 (142.161.5.195)  32.400 ms  29.095 ms  29.353 ms
+ 3  wnpgmb0121w-dr02-v953.mts.net (142.161.5.2)  29.303 ms  29.681 ms  29.709 ms
+ 4  wnpgmb0125w-cr02-v923.mts.net (142.161.4.34)  80.532 ms wnpgmb0125w-cr02-v921.mts.net (142.161.4.2)  199.950 ms wnpgmb0125w-cr02-v923.mts.net (142.161.4.34)  200.375 ms
+ 5  209.112.55.113 (209.112.55.113)  28.974 ms  29.140 ms  28.990 ms
+ 6  ge5-0.gwy2-tor.bb.allstream.net (199.212.161.170)  54.674 ms  54.718 ms  54.888 ms
+ 7  gw-google.torontointernetxchange.net (198.32.245.6)  54.313 ms  54.560 ms  54.730 ms
+ 8  66.249.94.90 (66.249.94.90)  63.863 ms  57.514 ms  54.886 ms
+ 9  66.249.94.118 (66.249.94.118)  55.026 ms 66.249.94.50 (66.249.94.50)  70.769 ms 72.14.236.134 (72.14.236.134)  54.983 ms
+10  eh-in-f99.google.com (72.14.207.99)  55.594 ms  54.790 ms  55.091 ms
+~ % 
+

@@ -1,0 +1,74 @@
+\hypertarget{class_change_line_up_event}{
+\section{ChangeLineUpEvent Class Reference}
+\label{class_change_line_up_event}\index{ChangeLineUpEvent@{ChangeLineUpEvent}}
+}
+Models the situation where a cashier closes a checkout while there are customers in line.  
+
+
+Inheritance diagram for ChangeLineUpEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_change_line_up_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_change_line_up_event_4a8c8f7b541c0a113a571348ba54c979}{ChangeLineUpEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_customer}{Customer} customer)
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_change_line_up_event}{ChangeLineUpEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_change_line_up_event_e7a0c51e7d5fd3e2e126381045f22683}{action} ()
+\begin{CompactList}\small\item\em called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the situation where a cashier closes a checkout while there are customers in line. 
+
+These customers must repeat the arrival process to find a new checkout.
+
+\small\begin{alltt}
+ \hyperlink{class_change_line_up_event}{ChangeLineUpEvent}:
+   choose Line
+   if Line.empty?:
+     T self -> \hyperlink{class_start_checkout_event}{StartCheckoutEvent} @ t+1
+   else:
+     self -> Q
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_change_line_up_event_4a8c8f7b541c0a113a571348ba54c979}{
+\index{ChangeLineUpEvent@{ChangeLineUpEvent}!ChangeLineUpEvent@{ChangeLineUpEvent}}
+\index{ChangeLineUpEvent@{ChangeLineUpEvent}!ChangeLineUpEvent@{ChangeLineUpEvent}}
+\subsubsection[{ChangeLineUpEvent}]{\setlength{\rightskip}{0pt plus 5cm}ChangeLineUpEvent::ChangeLineUpEvent (int {\em time}, \/  {\bf Customer} {\em customer})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_change_line_up_event_4a8c8f7b541c0a113a571348ba54c979}
+
+
+Construct a new \hyperlink{class_change_line_up_event}{ChangeLineUpEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]the time at which this event will occur. \item[{\em customer}]the customer that will have to move \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_change_line_up_event_e7a0c51e7d5fd3e2e126381045f22683}{
+\index{ChangeLineUpEvent@{ChangeLineUpEvent}!action@{action}}
+\index{action@{action}!ChangeLineUpEvent@{ChangeLineUpEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void ChangeLineUpEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_change_line_up_event_e7a0c51e7d5fd3e2e126381045f22683}
+
+
+called when this event \char`\"{}happens\char`\"{}. 
+
+The customer should choose a ne line, and start checking out if nobody is ahead of them. \subparagraph*{Externals}
+
+\hyperlink{class_checkout}{Checkout}, \hyperlink{class_customer}{Customer}, \hyperlink{class_start_checkout_event}{StartCheckoutEvent} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+ChangeLineUpEvent.java\end{CompactItemize}

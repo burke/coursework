@@ -1,0 +1,24 @@
+1) (done) 
+2) "MCU Port"
+3) All three connectors marked "MCU Port" are connected (J5, J6, J7).
+  3.1) This would allow for multiple devices that use independent subsets of connectors, or devices that operate periodically at different times.
+4) Octal bus switch
+  4.1) The chip allows the pushbutton and LED enable jumpers on JP10 to each enable 4 lines.
+5) This is the feature enable jumper set. the jumpers enable the buzzer, LEDs, and Pushbuttons.
+  5.1) A lot of projects will not make use of pushbuttons or LEDs, so it makes sense to disable them. Buzzers can be especially irritating :)
+6) High.
+  6.1) Low. This would just invert the function of the jumper.
+7) Low.
+8) Inverting resistors maybe? There's really no way to tell...
+9) M36
+10) PT5/IOC5
+11) 8
+  11.1) 4
+  11.2) Some could be reserved for use outside the MCU.
+12) M9, M11, M29, M31
+13) PP5/KWP5, PE0/XIRQ, PAD02/AN02, PAD03/AN03
+  13.1) Well, yes, I guess. They're all connected to the MCU port.
+14) The line goes High when a button is depressed.
+15) four
+16) M39, M37, M35, M33
+17) PAD07/AN07, PAD06/AN06, PAD05/AN05, PAD04/AN04

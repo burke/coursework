@@ -1,0 +1,130 @@
+\hypertarget{class_soopa_store}{
+\section{SoopaStore Class Reference}
+\label{class_soopa_store}\index{SoopaStore@{SoopaStore}}
+}
+Simulates a supermarket.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{class_soopa_store_0aad33c6987dcb01206d9dca916b8f6e}{startSimulation} ()
+\begin{CompactList}\small\item\em The Main loop essentially. \item\end{CompactList}\item 
+\hypertarget{class_soopa_store_a3379b3f69cf90bc2ec53d6a091845fa}{
+static int \textbf{currentTime} ()}
+\label{class_soopa_store_a3379b3f69cf90bc2ec53d6a091845fa}
+
+\item 
+static void \hyperlink{class_soopa_store_084115ff6adac00d13503ea1f3dc8cb9}{processNextEvent} ()
+\begin{CompactList}\small\item\em Pull an event off the EventList and call action() on it to run it. \item\end{CompactList}\item 
+static \hyperlink{class_ordered_list}{OrderedList} \hyperlink{class_soopa_store_cb13f3037f1ccb3e1ff74527ed2d5a68}{getEventList} ()
+\begin{CompactList}\small\item\em Return this store's event list. \item\end{CompactList}\item 
+\hypertarget{class_soopa_store_3420dc46c01f9a26a78e6b39065449e8}{
+static \hyperlink{class_checkout}{Checkout} \hyperlink{class_soopa_store_3420dc46c01f9a26a78e6b39065449e8}{firstUnmannedCheckout} ()}
+\label{class_soopa_store_3420dc46c01f9a26a78e6b39065449e8}
+
+\begin{CompactList}\small\item\em Return the first checkout that doesn't have a cashier, so employees can figure out where to go. \item\end{CompactList}\item 
+\hypertarget{class_soopa_store_ab26ca28144f3c443e7aa57e9ff3bc44}{
+static \hyperlink{class_checkout}{Checkout} \hyperlink{class_soopa_store_ab26ca28144f3c443e7aa57e9ff3bc44}{preferableCheckout} ()}
+\label{class_soopa_store_ab26ca28144f3c443e7aa57e9ff3bc44}
+
+\begin{CompactList}\small\item\em Return the emptiest checkout, so customers can figure out where to go. \item\end{CompactList}\item 
+\hypertarget{class_soopa_store_80986490e40b21efdc13d5c0697a9cbf}{
+static void \hyperlink{class_soopa_store_80986490e40b21efdc13d5c0697a9cbf}{readNextArrival} ()}
+\label{class_soopa_store_80986490e40b21efdc13d5c0697a9cbf}
+
+\begin{CompactList}\small\item\em Pull the next arrival from input, create an event for it, and stick it on the EventList. \item\end{CompactList}\item 
+static void \hyperlink{class_soopa_store_07531dfae1141f6fe1874d7c535c2c37}{addCashierArrivalEvent} (int arrivalTime, int employeeNumber, int quittingTime)
+\begin{CompactList}\small\item\em Create an \hyperlink{class_arrival_event}{ArrivalEvent} for an employee record that was pulled from input. \item\end{CompactList}\item 
+static void \hyperlink{class_soopa_store_8f06afcdd8fd1d442039bf152cbbfe00}{addCustomerArrivalEvent} (int arrivalTime, int numItems)
+\begin{CompactList}\small\item\em Create an \hyperlink{class_arrival_event}{ArrivalEvent} for a customer record that was pulled from input. \item\end{CompactList}\item 
+static void \hyperlink{class_soopa_store_7dcaea26d0ff077426773425ea274c9b}{main} (String args\mbox{[}$\,$\mbox{]})
+\begin{CompactList}\small\item\em Start the simulation by calling \hyperlink{class_soopa_store}{SoopaStore}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Simulates a supermarket. 
+
+\subparagraph*{Input}
+
+Should be instantiated with a number of checkouts to simulate and an input file to read from
+
+\subparagraph*{Output}
+
+Prints a summary of most events as they happen and some basic stats at the end. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_soopa_store_07531dfae1141f6fe1874d7c535c2c37}{
+\index{SoopaStore@{SoopaStore}!addCashierArrivalEvent@{addCashierArrivalEvent}}
+\index{addCashierArrivalEvent@{addCashierArrivalEvent}!SoopaStore@{SoopaStore}}
+\subsubsection[{addCashierArrivalEvent}]{\setlength{\rightskip}{0pt plus 5cm}static void SoopaStore::addCashierArrivalEvent (int {\em arrivalTime}, \/  int {\em employeeNumber}, \/  int {\em quittingTime})\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_07531dfae1141f6fe1874d7c535c2c37}
+
+
+Create an \hyperlink{class_arrival_event}{ArrivalEvent} for an employee record that was pulled from input. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arrivalTime}]the time at which the person arrives \item[{\em employeeNumber}]id of employee \item[{\em quittingTime}]time at which employee's shift is over \end{description}
+\end{Desc}
+\hypertarget{class_soopa_store_8f06afcdd8fd1d442039bf152cbbfe00}{
+\index{SoopaStore@{SoopaStore}!addCustomerArrivalEvent@{addCustomerArrivalEvent}}
+\index{addCustomerArrivalEvent@{addCustomerArrivalEvent}!SoopaStore@{SoopaStore}}
+\subsubsection[{addCustomerArrivalEvent}]{\setlength{\rightskip}{0pt plus 5cm}static void SoopaStore::addCustomerArrivalEvent (int {\em arrivalTime}, \/  int {\em numItems})\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_8f06afcdd8fd1d442039bf152cbbfe00}
+
+
+Create an \hyperlink{class_arrival_event}{ArrivalEvent} for a customer record that was pulled from input. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arrivalTime}]the time at which the person arrives \item[{\em numItems}]the number of items this customer is purchasing \end{description}
+\end{Desc}
+\hypertarget{class_soopa_store_cb13f3037f1ccb3e1ff74527ed2d5a68}{
+\index{SoopaStore@{SoopaStore}!getEventList@{getEventList}}
+\index{getEventList@{getEventList}!SoopaStore@{SoopaStore}}
+\subsubsection[{getEventList}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf OrderedList} SoopaStore::getEventList ()\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_cb13f3037f1ccb3e1ff74527ed2d5a68}
+
+
+Return this store's event list. 
+
+\hypertarget{class_soopa_store_7dcaea26d0ff077426773425ea274c9b}{
+\index{SoopaStore@{SoopaStore}!main@{main}}
+\index{main@{main}!SoopaStore@{SoopaStore}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void SoopaStore::main (String {\em args}\mbox{[}$\,$\mbox{]})\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_7dcaea26d0ff077426773425ea274c9b}
+
+
+Start the simulation by calling \hyperlink{class_soopa_store}{SoopaStore}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em args}]not like we use it. \end{description}
+\end{Desc}
+\hypertarget{class_soopa_store_084115ff6adac00d13503ea1f3dc8cb9}{
+\index{SoopaStore@{SoopaStore}!processNextEvent@{processNextEvent}}
+\index{processNextEvent@{processNextEvent}!SoopaStore@{SoopaStore}}
+\subsubsection[{processNextEvent}]{\setlength{\rightskip}{0pt plus 5cm}static void SoopaStore::processNextEvent ()\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_084115ff6adac00d13503ea1f3dc8cb9}
+
+
+Pull an event off the EventList and call action() on it to run it. 
+
+\hypertarget{class_soopa_store_0aad33c6987dcb01206d9dca916b8f6e}{
+\index{SoopaStore@{SoopaStore}!startSimulation@{startSimulation}}
+\index{startSimulation@{startSimulation}!SoopaStore@{SoopaStore}}
+\subsubsection[{startSimulation}]{\setlength{\rightskip}{0pt plus 5cm}static void SoopaStore::startSimulation ()\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{class_soopa_store_0aad33c6987dcb01206d9dca916b8f6e}
+
+
+The Main loop essentially. 
+
+Read in an event, then as long as the event list has more events to process, process them. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+SoopaStore.java\end{CompactItemize}

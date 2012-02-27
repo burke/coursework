@@ -1,0 +1,81 @@
+\hypertarget{class_sortable_object}{
+\section{SortableObject Class Reference}
+\label{class_sortable_object}\index{SortableObject@{SortableObject}}
+}
+By inheriting from this class and implementing the compareTo method, a class can be used in Sorted Lists.  
+
+
+Inheritance diagram for SortableObject::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8cm]{class_sortable_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+abstract int \hyperlink{class_sortable_object_b8f80361da32c8b04d89116993e60847}{compareTo} (\hyperlink{class_sortable_object}{SortableObject} item)
+\begin{CompactList}\small\item\em Compare this \hyperlink{class_node}{Node} to another. \item\end{CompactList}\item 
+Boolean \hyperlink{class_sortable_object_b450b5c6e59922086c2b50e033a1d022}{greaterThan} (\hyperlink{class_sortable_object}{SortableObject} item)
+\begin{CompactList}\small\item\em Is item greater than or equal to this? \item\end{CompactList}\item 
+Boolean \hyperlink{class_sortable_object_24b763b682db416a7cf58713b086c9e0}{lessThan} (\hyperlink{class_sortable_object}{SortableObject} item)
+\begin{CompactList}\small\item\em Is item less than or equal to this? \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+By inheriting from this class and implementing the compareTo method, a class can be used in Sorted Lists. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sortable_object_b8f80361da32c8b04d89116993e60847}{
+\index{SortableObject@{SortableObject}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!SortableObject@{SortableObject}}
+\subsubsection[{compareTo}]{\setlength{\rightskip}{0pt plus 5cm}abstract int SortableObject::compareTo ({\bf SortableObject} {\em item})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_sortable_object_b8f80361da32c8b04d89116993e60847}
+
+
+Compare this \hyperlink{class_node}{Node} to another. 
+
+Use the primarySortingKey, then secondarySortingKey methods.
+
+Returns -1 if this$<$other, 0 if this==other, and 1 if this$>$other.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em item}]The node to compare this node to \end{description}
+\end{Desc}
+
+
+Implemented in \hyperlink{class_event_6ef202b20715ab70bcfc052e64f1094b}{Event}, and \hyperlink{class_person_7cf242bfd4f0bfac0d7baec9dc420c7d}{Person}.\hypertarget{class_sortable_object_b450b5c6e59922086c2b50e033a1d022}{
+\index{SortableObject@{SortableObject}!greaterThan@{greaterThan}}
+\index{greaterThan@{greaterThan}!SortableObject@{SortableObject}}
+\subsubsection[{greaterThan}]{\setlength{\rightskip}{0pt plus 5cm}Boolean SortableObject::greaterThan ({\bf SortableObject} {\em item})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_sortable_object_b450b5c6e59922086c2b50e033a1d022}
+
+
+Is item greater than or equal to this? 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em item}]The item to compare against \end{description}
+\end{Desc}
+\hypertarget{class_sortable_object_24b763b682db416a7cf58713b086c9e0}{
+\index{SortableObject@{SortableObject}!lessThan@{lessThan}}
+\index{lessThan@{lessThan}!SortableObject@{SortableObject}}
+\subsubsection[{lessThan}]{\setlength{\rightskip}{0pt plus 5cm}Boolean SortableObject::lessThan ({\bf SortableObject} {\em item})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_sortable_object_24b763b682db416a7cf58713b086c9e0}
+
+
+Is item less than or equal to this? 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em item}]The item to compare against \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+SortableObject.java\end{CompactItemize}

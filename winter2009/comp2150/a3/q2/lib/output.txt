@@ -1,0 +1,55 @@
+Welcome to Mini SoopaStore...
+
+EVENT LIST IS:
+Arrival of Cashier 12 at time 2
+Arrival of Customer 46 at time 8
+Arrival of Customer 47 at time 9
+Arrival of Customer 44 at time 12
+Arrival of Customer 45 at time 14
+Arrival of Customer 42 at time 23
+Arrival of Customer 43 at time 23
+
+Time 2  : Cashier 12 arrives & starts work
+Time 8  : Customer  46 arrives (13 items, enters checkout & gets served)
+Time 9  : Customer  47 arrives (12 items, enters checkout & waits)
+Time 12  : Customer  44 arrives (137 items, enters checkout & waits)
+Time 12  : Customer  46 departs (spent 0 units waiting)
+Time 14  : Customer  45 arrives (42 items, enters checkout & waits)
+Time 16  : Customer  47 departs (spent 3 units waiting)
+Time 23  : Customer  42 arrives (22 items, enters checkout & waits)
+Time 23  : Customer  43 arrives (1 items, enters checkout & waits)
+Time 52  : Customer  44 departs (spent 4 units waiting)
+Time 64  : Customer  45 departs (spent 38 units waiting)
+Time 71  : Customer  42 departs (spent 41 units waiting)
+Time 73  : Customer  43 departs (spent 48 units waiting)
+Time 74  : Cashier 12 leaves checkout (worked 72 time units)
+
+...All events complete.  Final Summary:
+Cashier Information:
+
+ID      Start    Time        Customers   Items
+Number  Time     Worked      Served      Packed
+-----------------------------------------------
+12      2        72          6           227
+Customer Information:
+
+ID      Start    Grocery  Waiting
+Number  Time     Items    Time
+---------------------------------
+42      23       22       41
+43      23       1        48
+44      12       137      4
+45      14       42       38
+46      8        13       0
+47      9        12       3
+Checkout Information:
+
+Time     Total       Total
+Staffed  Customers   Items
+--------------------------
+72       6           227
+
+Customers processed in total: 6
+Average waiting time per customer :0
+
+End of Processing

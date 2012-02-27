@@ -1,0 +1,71 @@
+\hypertarget{class_customer_departure_event}{
+\section{CustomerDepartureEvent Class Reference}
+\label{class_customer_departure_event}\index{CustomerDepartureEvent@{CustomerDepartureEvent}}
+}
+Models the departure of a customer from an event-based simulation.  
+
+
+Inheritance diagram for CustomerDepartureEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{class_customer_departure_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_customer_departure_event_64ebee80dee23f6c0ca66fee9c514546}{CustomerDepartureEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_customer}{Customer} customer, \hyperlink{class_checkout}{Checkout} \hyperlink{class_departure_event_2fac3154bc1da1ab0a32c457872451a1}{checkout})
+\begin{CompactList}\small\item\em Constructs a new \hyperlink{class_customer_departure_event}{CustomerDepartureEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_customer_departure_event_0245be14abc9118d39123158559e1cdb}{action} ()
+\begin{CompactList}\small\item\em called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the departure of a customer from an event-based simulation. 
+
+\small\begin{alltt}
+ \hyperlink{class_customer_departure_event}{CustomerDepartureEvent}:
+   if |Q| > 0:
+     T Q.front -> \hyperlink{class_start_checkout_event}{StartCheckoutEvent} @ t+1
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_customer_departure_event_64ebee80dee23f6c0ca66fee9c514546}{
+\index{CustomerDepartureEvent@{CustomerDepartureEvent}!CustomerDepartureEvent@{CustomerDepartureEvent}}
+\index{CustomerDepartureEvent@{CustomerDepartureEvent}!CustomerDepartureEvent@{CustomerDepartureEvent}}
+\subsubsection[{CustomerDepartureEvent}]{\setlength{\rightskip}{0pt plus 5cm}CustomerDepartureEvent::CustomerDepartureEvent (int {\em time}, \/  {\bf Customer} {\em customer}, \/  {\bf Checkout} {\em checkout})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_customer_departure_event_64ebee80dee23f6c0ca66fee9c514546}
+
+
+Constructs a new \hyperlink{class_customer_departure_event}{CustomerDepartureEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]time at which event occurs \item[{\em customer}]customer departing \item[{\em checkout,:}]checkout customer is departing from \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_customer}{Customer}, \hyperlink{class_checkout}{Checkout} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_customer_departure_event_0245be14abc9118d39123158559e1cdb}{
+\index{CustomerDepartureEvent@{CustomerDepartureEvent}!action@{action}}
+\index{action@{action}!CustomerDepartureEvent@{CustomerDepartureEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void CustomerDepartureEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_customer_departure_event_0245be14abc9118d39123158559e1cdb}
+
+
+called when this event \char`\"{}happens\char`\"{}. 
+
+If the line behind them is not empty, the customer will trigger a \hyperlink{class_start_checkout_event}{StartCheckoutEvent} on the front.
+
+\subparagraph*{Externals}
+
+\hyperlink{class_start_checkout_event}{StartCheckoutEvent}, \hyperlink{class_customer}{Customer} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+CustomerDepartureEvent.java\end{CompactItemize}

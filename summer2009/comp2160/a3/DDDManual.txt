@@ -1,0 +1,124 @@
+DDD - Data Display Debugger - GNU Project - Free Software Foundation (FSF)GNU
+Project - Software 
+
+
+What is DDD?
+GNU DDD is a graphical front-end for command-line debuggers such as GDB, DBX, 
+WDB, Ladebug, JDB, XDB, the Perl debugger, the bash debugger, or the Python 
+debugger. Besides ``usual'' front-end features such as viewing source texts, DDD 
+has become famous through its interactive graphical data display, where data 
+structures are displayed as graphs. 
+     
+For more information (and more screenshots), see the DDD Manual. 
+Where do I get DDD source?
+DDD can be found at /gnu/ddd/ on ftp.gnu.org. DDD can also be found at 
+SourceForge. You can also download GNU DDD from any GNU FTP server near you or 
+buy copies on CD-ROM from the FSF. The ddd/ directory contains the DDD source 
+distribution: 
+  ddd-version.tar.gz -- this package is the one you want. It includes 
+    the complete DDD source code, 
+    building instructions, as well as 
+    the DDD manual in TeXinfo, Info, PostScript, and PDF formats. 
+Here are further instructions on how to download and unpack GNU packages.
+Where do I get DDD binaries?
+The FSF does not distribute DDD binaries. You can ask for help if you need 
+technical support. 
+DDD binaries for GNU/Linux are typically available via your GNU/Linux 
+distributor: 
+  DDD packages for Debian GNU/Linux are found here. 
+  DDD RPMs can be found in 
+  http://rpmfind.net/linux/rpm2html/search.php?query=ddd. 
+The written word provides binaries of freely available software for various 
+platforms. Their FTP server contains DDD and XPM packages. 
+What do I need to build DDD?
+To build DDD from sources, you need 
+  The DDD source distribution (see above). 
+  The GNU compiler collection (GCC), version 3.0 or higher (or another ISO C++ 
+  compiler). 
+  The LessTif user interface toolkit, version 0.89 or higher (or another 
+  Motif-compatible user interface toolkit). 
+The simplest way to build DDD is: 
+  Unpack the DDD source distribution 
+  Change into the ddd-version subdirectory 
+  Type ./configure; make 
+To run DDD, you need the GNU debugger (GDB), version 4.16 or later (or another 
+command-line debugger such as DBX, WDB, Ladebug, JDB, XDB, the Perl debugger, or 
+the Python debugger). 
+How do I get started with DDD?
+The DDD Manual contains a detailed tutorial. 
+Here are some free third-party tutorials on the Web: 
+  There's an article on DDD in Dr. Dobb's Journal. 
+  The book Programmierwerkzeuge has a detailed chapter on debugging with GDB and 
+  DDD (in German; select "Kapitel 11"). 
+  LinuxFocus has a DDD tutorial in English, Spanish, German, French, Korean, and 
+  Turkish. 
+  Linux-Magazin has another DDD tutorial (in German). 
+Where do I get DDD alpha releases?
+Recent (not necessarily tested) snapshots of GNU DDD can be found at 
+http://sourceforge.net/projects/ddd/. 
+The DDD CVS repository (containing all versions of DDD, including the very 
+latest changes) is available via http://sourceforge.net/projects/ddd/. 
+I have found a bug! How do I report it?
+You can report bugs to bug-ddd at gnu.org. Before you do this, please check the 
+following: 
+  Please read the section ``Bugs and How to Report Them'' toward the end of the 
+  DDD Manual. 
+  Be sure to include a copy of your ~/.ddd/log file which tells your DDD 
+  configuration as well as the interaction between DDD and the underlying 
+  command-line debugger. 
+The purpose of reporting a bug is to enable the bug to be fixed for the sake of 
+the whole community of users. You may or may not receive a response; the 
+maintainers will send one if that helps them find or verify a fix. Most GNU 
+maintainers are volunteers and all are overworked; they don't have time to help 
+individuals and still fix the bugs and make the improvements that everyone 
+wants. If you want help for yourself in particular, you may have to hire someone 
+for technical support. 
+If you are willing to help fixing DDD bugs, you can subscribe to the bug-ddd 
+mailing list or access its archives. 
+I have a question regarding DDD. Where do I get assistance?
+We have a general-purpose mailing list devoted to DDD. You can ask any questions 
+to ddd at gnu.org. Patches and new releases are also announced here. 
+Subscription info and mailing list archives are available. Owing to abuse by 
+spammers, it is necessary to subscribe before posting to the list. 
+If you need technical support on DDD, you can ask for technical support. 
+Where can I learn more about debugging and debuggers?
+Here's a couple of related resources: 
+  GDB Home Page. Includes latest patches and development snapshots. 
+  LessTif. The free Motif clone. 
+  GVD. The GNU Visual Debugger. 
+  HP Wildebeest (WDB). A port of GDB to PA-RISC/HP-UX, by HP. 
+  Insight. A very nice GUI for GDB from Redhat, the GDB maintainers. 
+  KDbg. A KDE-based GDB Interface with inspection of variable values in a tree 
+  structure. 
+  KDevelop. A KDE based development environment. 
+  xxgdb. The oldest and simplest X interface for GDB and DBX. 
+  tgdb. A Tcl/Tk GDB interface (similar to Turbo Debugger or CodeView). 
+  ups. An alternative UNIX debugger with integrated C interpreter. 
+  deet. A simple and extensible graphical debugger. 
+  A list of available Perl debuggers. The ultimate Perl reference. 
+  A GUI for the Perl Debugger. Written in Perl. 
+  GNU Nana. Improved support for assertions and logging in C and C++. 
+  SmartGDB. Scriptable, thread-aware extension of GDB. 
+  Debugging Tools for Dynamic Storage Allocation and Memory Management. 
+  GNU Checker. A tool to find memory errors at runtime 
+  xwpe. A programming environment integrating a program editor with an external 
+  debugger. 
+  Algorithmic and Automatic Debugging. A survey on current debugging research. 
+  High Performance Debugging Forum. An evolving set of standards for debugging 
+  tools. 
+Have fun with DDD! 
+Andreas Zeller zeller at gnu.org 
+Andrew Gaylard apg at users dot sf dot net 
+
+
+Return to GNU's home page. 
+Please send FSF & GNU inquiries & questions to gnu at gnu.org. There are also 
+other ways to contact the FSF. 
+Please send comments on these web pages to webmasters at www.gnu.org, send other 
+questions to gnu at gnu.org. 
+Copyright (C) 2000-2003 Free Software Foundation, Inc., 59 Temple Place - Suite 
+330, Boston, MA 02111, USA 
+Verbatim copying and distribution of this entire article is permitted in any 
+medium, provided this notice is preserved. 
+Updated: $Date: 2005/10/22 15:41:39 $ $Author: apgaylard $ 
+

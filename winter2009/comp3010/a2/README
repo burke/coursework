@@ -1,0 +1,17 @@
+COMP 3010 Assignment 2
+
+Distributed Calendar System
+
+Burke Libbey (6840752)
+
+To run the application, simply execute "./run".
+
+The server uses CloudKit, a JSON-based RESTful server. It accepts schema-less data through HTTP requests and provides a nice interface to use on the client side.
+
+The client uses the jQuery library with a plugin to interface with CloudKit and a local storage engine called TaffyDB. On page load, the events and users data is loaded from the server and stored in TaffyDB. The user interacts with the data, possibly adding and removing events. These changes are pushed asynchronously back to the server, providing a 100% latency free experience once the page has loaded. 
+
+I considered using TokyoCabinet as a persistent storage engine for CloudKit, but I'm not sure how the applications are being tested, so I didn't want to drag around a binary dependency. As it is, the database will reset each time the application is restarted, as all data is stored in a hash-based in-memory storage by CloudKit.
+
+If you'd like to load a very small amount of sample data, just run fixtures.sh after starting the application.
+
+Most of the application code is in public/assets/javascripts/site.js

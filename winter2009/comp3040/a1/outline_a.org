@@ -1,0 +1,10 @@
+
+
+OUTLINE A
+Burke Libbey
+
+- Software is migrating toward the web.
+- Example: GMail. 
+- Groundwork has been laid for this migration (browsers, connections)
+- Using RIAs means you're less tied to your computer
+- Use RIAs.

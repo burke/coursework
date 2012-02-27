@@ -1,0 +1,63 @@
+\documentclass[10pt,letterpaper,titlepage]{article}
+
+\begin{document}
+
+\author{Burke Libbey \\ 6840752}
+\title{Lab 3: The Internet Layer: \\ Network and Data Link}
+\date{\today}
+
+\maketitle
+
+\begin{enumerate}
+\item \begin{itemize}
+  \item Almost all DNS servers allow public access. Occasional exceptions are made at large installations -- eg. Universities, businesses, and so on -- where access can be restricted to a controlled set of IPs and/or MACs and/or login credentials.
+  \item You can use almost any DNS server in the world as your default DNS server. However, due to the latency-sensitive nature of DNS, it is usually a good idea to pick a server geographically close to you, or one that is cached on a wide content distribution network.
+  \item The Authoritative Name Server delegates to the other name servers to reduce load and provide a fail-safe. If there is a conflict, the Authoritative Name Server is assumed to be correct.
+  \item The client will get (in order) the NS record for dns.umass.edu, the A record for dns.umass.edu (both from the root nameserver), and finally the A record for gaia.cs.umass.edu from dns.umass.edu. This totals three requests.
+\end{itemize}
+\item \begin{itemize}
+  \item My IP's registered name was wnpgmb014uw-ad04-243-62.dynamic.mts.net.
+  \item 130.179.128.83
+  \item lom-engserver.ee.umanitoba.ca.
+  \item Default server: zaurak.cc.umanitoba.ca
+  \item The `ls' command is not implemented.
+  \item The `ls' command is not implemented. -- Pretty much expected, given above.
+  \item *** Can't find www.ee.umanitoba.ca: No answer -- Being a root nameserver, it isn't typically concerned with fourth-level domains.
+  \item Might come back to this. Low on time.
+  \item Might come back to this. Low on time.
+\end{itemize}
+\item \begin{itemize}
+  \item DHCP uses the DHCP protocol, oddly enough. (It uses TCP, if that's what the question is asking). DHCP traffic uses ports 67 and 68.
+  \item You might be assigned the same IP, but this is somewhat unlikely, as and IP is negotiated each time a host connects to the network.
+  \item The router can use NAT so the on the internal network the computers have distinct IPs, while externally, all traffic appears to be originating from the same machine. The external IP will be the leased IP.
+  \item IP: 192.168.1.6; MAC: 00:1b:63:31:14:28; Subnet: 255.255.255.0; GW: 192.168.1.1; DHCP: 208.67.222.222
+  \item 255.255.255.0 allows variation only in the fourth octet, which matches the change from IP to GW, so both hosts are on the same local network.
+\end{itemize}
+\item \begin{itemize}
+\item See arp.txt
+\item The first two are for NAT networks with virtual machines on my system. The third is my router, the fourth is my Wii, and the last is a fileserver/webserver.
+\item My gateway: 0:1c:10:98:8a:c2 
+\end{itemize}
+\item \begin{itemize}
+  \item See routingtable.txt
+  \item All of these entries are local.
+  \item It would be sent to ``DD-WRT''.
+  \item Four forwarding tables would be indexed.
+\end{itemize}
+\item \begin{itemize}
+  \item Message size increases RTT, since it increases the Transmission time.
+  \item Distance also increases RTT, since it increases the Propagation time.
+\end{itemize}
+\item \begin{itemize}
+  \item Both times, it took 11 hops to get to google, and chose the same host both times.
+  \item On the third try, google.com resolved to a different IP.
+  \item Google.com has 64.233.187.99, 64.233.167.99, and 72.14.207.99.
+  \item Routes don't change much because it is advantageous to send an entire stream of packets along one path, reducing the risk of out-of-order packets.
+\end{itemize}
+\item \begin{itemize}
+  \item See WebServer.java and RequestHandler.java
+\end{itemize}
+\end{enumerate}
+
+
+\end{document}

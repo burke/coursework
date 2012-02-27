@@ -1,0 +1,43 @@
+Time 12  : Cashier 12 arrives & starts work
+Time 13  : Customer  45 arrives (13 items)
+Time 13  : Customer  46 arrives (12 items)
+Time 14  : Customer  47 arrives (42 items)
+Time 17  : Customer  45 departs (spent 0 units waiting)
+Time 21  : Customer  46 departs (spent 4 units waiting)
+Time 23  : Customer  48 arrives (22 items)
+Time 23  : Customer  49 arrives (1 items)
+Time 33  : Customer  47 departs (spent 7 units waiting)
+Time 40  : Customer  48 departs (spent 10 units waiting)
+Time 42  : Customer  49 departs (spent 17 units waiting)
+Time 43  : Cashier 12 leaves checkout (worked 31 time units)
+...All events complete. Final Summary:
+
+Cashier Information:
+
+ID      Start  Time    Customers  Items   
+Number  Time   Worked  Served     Packed  
+------------------------------------------
+12      12     31      5          90      
+
+Customer Information:
+
+ID      Start  Grocery  Waiting  
+Number  Time   Items    Time     
+---------------------------------
+49      23     1        17       
+48      23     22       10       
+47      14     42       7        
+46      13     12       4        
+45      13     13       0        
+
+Checkout Information:
+
+Time     Total      Total  
+Staffed  Customers  Items  
+---------------------------
+31       5          90     
+
+Customers processed in total: 5
+Average waiting time per customer :7.6
+
+End of Processing

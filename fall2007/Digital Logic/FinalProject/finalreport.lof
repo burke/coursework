@@ -1,0 +1,12 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Overview of Project Architecture}}{2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Selected encoded sequences}}{3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Selector}}{4}
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparator}}{4}
+\contentsline {figure}{\numberline {5}{\ignorespaces State diagram for zero detection}}{5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Possible SSD output values}}{6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {AB}}}{6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {CD}}}{6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {EE}}}{6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Simulation of Zero-detection Finite State Machine}}{7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Simulation of Comparator}}{7}
+\contentsline {figure}{\numberline {9}{\ignorespaces Full schematic of final circuit}}{8}

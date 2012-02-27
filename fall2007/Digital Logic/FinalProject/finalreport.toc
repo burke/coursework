@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Design and Implementation}{2}
+\contentsline {subsection}{\numberline {2.1}Overview}{2}
+\contentsline {subsection}{\numberline {2.2}Input}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Keypad}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Pushbutton}{3}
+\contentsline {subsection}{\numberline {2.3}Logic}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}Selector}{3}
+\contentsline {subsubsection}{\numberline {2.3.2}Comparator}{4}
+\contentsline {subsubsection}{\numberline {2.3.3}Zero-overflow Detection}{5}
+\contentsline {subsection}{\numberline {2.4}Output}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}LEDs}{5}
+\contentsline {subsubsection}{\numberline {2.4.2}Seven Segment Displays}{5}
+\contentsline {section}{\numberline {3}Unimplemented Ideas}{5}
+\contentsline {subsection}{\numberline {3.1}BCD Zero Counter}{5}
+\contentsline {section}{\numberline {4}Problems we Encountered}{6}
+\contentsline {subsection}{\numberline {4.1}Manual Input}{6}
+\contentsline {subsection}{\numberline {4.2}Quartus Quirks}{6}
+\contentsline {subsection}{\numberline {4.3}D Flip-flop Initial Condition}{6}
+\contentsline {section}{\numberline {5}Simulations}{7}
+\contentsline {section}{\numberline {6}Conclusion}{7}

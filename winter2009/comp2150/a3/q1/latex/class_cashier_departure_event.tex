@@ -1,0 +1,61 @@
+\hypertarget{class_cashier_departure_event}{
+\section{CashierDepartureEvent Class Reference}
+\label{class_cashier_departure_event}\index{CashierDepartureEvent@{CashierDepartureEvent}}
+}
+Models the departure of an employee in a simulation.  
+
+
+Inheritance diagram for CashierDepartureEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{class_cashier_departure_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_cashier_departure_event_393f31367b81ce356ab721ebae00f63d}{CashierDepartureEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_cashier}{Cashier} employee, \hyperlink{class_checkout}{Checkout} \hyperlink{class_departure_event_2fac3154bc1da1ab0a32c457872451a1}{checkout})
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_cashier_departure_event}{CashierDepartureEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_cashier_departure_event_58a6e618df64f71ef309786ef8a9488f}{action} ()
+\begin{CompactList}\small\item\em method called when event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the departure of an employee in a simulation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cashier_departure_event_393f31367b81ce356ab721ebae00f63d}{
+\index{CashierDepartureEvent@{CashierDepartureEvent}!CashierDepartureEvent@{CashierDepartureEvent}}
+\index{CashierDepartureEvent@{CashierDepartureEvent}!CashierDepartureEvent@{CashierDepartureEvent}}
+\subsubsection[{CashierDepartureEvent}]{\setlength{\rightskip}{0pt plus 5cm}CashierDepartureEvent::CashierDepartureEvent (int {\em time}, \/  {\bf Cashier} {\em employee}, \/  {\bf Checkout} {\em checkout})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cashier_departure_event_393f31367b81ce356ab721ebae00f63d}
+
+
+Construct a new \hyperlink{class_cashier_departure_event}{CashierDepartureEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]time at which the event occurs \item[{\em employee}]employee leaving \item[{\em checkout}]checkout employee is leaving from \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_cashier}{Cashier}, \hyperlink{class_checkout}{Checkout} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cashier_departure_event_58a6e618df64f71ef309786ef8a9488f}{
+\index{CashierDepartureEvent@{CashierDepartureEvent}!action@{action}}
+\index{action@{action}!CashierDepartureEvent@{CashierDepartureEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void CashierDepartureEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cashier_departure_event_58a6e618df64f71ef309786ef8a9488f}
+
+
+method called when event \char`\"{}happens\char`\"{}. 
+
+Remove self from \hyperlink{class_checkout}{Checkout}. \subparagraph*{Externals}
+
+\hyperlink{class_cashier}{Cashier} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+CashierDepartureEvent.java\end{CompactItemize}

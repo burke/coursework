@@ -1,0 +1,7 @@
+OUTLINE B
+Burke Libbey
+
+- Point out how the IT guys are ripping their hair out over Exchange, and how it crashes so often.
+- Introduce Google Apps
+- Explain migration from desktop software to RIAs
+- We're using exchange because of calendar integration, so point out that GAFYD does that too.

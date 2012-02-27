@@ -1,0 +1,77 @@
+\hypertarget{class_shift_completed_event}{
+\section{ShiftCompletedEvent Class Reference}
+\label{class_shift_completed_event}\index{ShiftCompletedEvent@{ShiftCompletedEvent}}
+}
+Models the situation where a cashier is done their shift and wants to leave.  
+
+
+Inheritance diagram for ShiftCompletedEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{class_shift_completed_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_shift_completed_event_12cfabd48a4b30fa4baa2b2b1d6ca718}{ShiftCompletedEvent} (int \hyperlink{class_event_d4c0fbb00c3fd993405df98bafcd52c5}{time}, \hyperlink{class_cashier}{Cashier} employee, \hyperlink{class_checkout}{Checkout} \hyperlink{class_shift_completed_event_91532b8cba3678f6be6d7ed6bbf33660}{checkout})
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_shift_completed_event}{ShiftCompletedEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_shift_completed_event_4b09c21b802da89066245fbfc0111049}{action} ()
+\begin{CompactList}\small\item\em The method called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_shift_completed_event_91532b8cba3678f6be6d7ed6bbf33660}{
+\hyperlink{class_checkout}{Checkout} \hyperlink{class_shift_completed_event_91532b8cba3678f6be6d7ed6bbf33660}{checkout}}
+\label{class_shift_completed_event_91532b8cba3678f6be6d7ed6bbf33660}
+
+\begin{CompactList}\small\item\em The checkout from which the cashier is attempting to leave. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the situation where a cashier is done their shift and wants to leave. 
+
+\small\begin{alltt}
+ \hyperlink{class_shift_completed_event}{ShiftCompletedEvent}:
+   T Q.each -> ChangeLineUp @ t+1
+   T self -> \hyperlink{class_cashier_departure_event}{CashierDepartureEvent} @ f()
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shift_completed_event_12cfabd48a4b30fa4baa2b2b1d6ca718}{
+\index{ShiftCompletedEvent@{ShiftCompletedEvent}!ShiftCompletedEvent@{ShiftCompletedEvent}}
+\index{ShiftCompletedEvent@{ShiftCompletedEvent}!ShiftCompletedEvent@{ShiftCompletedEvent}}
+\subsubsection[{ShiftCompletedEvent}]{\setlength{\rightskip}{0pt plus 5cm}ShiftCompletedEvent::ShiftCompletedEvent (int {\em time}, \/  {\bf Cashier} {\em employee}, \/  {\bf Checkout} {\em checkout})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_shift_completed_event_12cfabd48a4b30fa4baa2b2b1d6ca718}
+
+
+Construct a new \hyperlink{class_shift_completed_event}{ShiftCompletedEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em time}]the time at which this event occurs \item[{\em employee}]the employee whose shift is complete \item[{\em checkout}]the checkout the employee is currently working \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_cashier}{Cashier}, \hyperlink{class_checkout}{Checkout} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shift_completed_event_4b09c21b802da89066245fbfc0111049}{
+\index{ShiftCompletedEvent@{ShiftCompletedEvent}!action@{action}}
+\index{action@{action}!ShiftCompletedEvent@{ShiftCompletedEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void ShiftCompletedEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_shift_completed_event_4b09c21b802da89066245fbfc0111049}
+
+
+The method called when this event \char`\"{}happens\char`\"{}. 
+
+For each person standing in line at this checkout, send them a \hyperlink{class_change_line_up_event}{ChangeLineUpEvent}, then trigger an \hyperlink{class_cashier_departure_event}{CashierDepartureEvent} as soon as the current customer is gone. \subparagraph*{Externals}
+
+\hyperlink{class_cashier}{Cashier}, \hyperlink{class_change_line_up_event}{ChangeLineUpEvent}, \hyperlink{class_cashier_departure_event}{CashierDepartureEvent}, \hyperlink{class_customer}{Customer} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+ShiftCompletedEvent.java\end{CompactItemize}

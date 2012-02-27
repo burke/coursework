@@ -1,0 +1,10 @@
+PART C
+Burke Libbey
+
+Right now, we are in a transitional period. Desktop software is becoming progressively less common as functionality is replicated in a much more accessible form on the Web. Until recently, the technology has been lacking, with JavaScript engines performing too slowly to do anything significant in terms of rich client interfaces. With the release and general adoption of Internet Explorer 7, the state of client environments is finally sufficient to develop true Rich Internet Applications (RIAs) and have them see wide adoption.
+
+Ten years ago, if you asked the typical web developer what the web landscape would look like today, the answer would probably have been Macromedia (now Adobe) Flash. As it turns out, however, we've seen a shift away from Flash and toward heavy JavaScript development. If there's a single technology to master for the coming years of web development, and software development in general, certainly it's JavaScript. As libraries and frameworks built on top of JavaScript continue to flourish, we're beginning to see applications that contend with desktop applications on a whole new level, and this trend will only continue as developers finally begin to recognize the Web as a viable platform. 
+
+The crux of the new Web is really the client-side software. Your backend could be written in COBOL for all anyone cares. In some extreme examples, like Apple's MobileMe, implemented on the SproutCore framework, a great deal of processing and data manipulation is done client-side to provide a more responsive user interface. This style of framework is still very immature, but it will soon be the dominant method of software development.
+
+In summary, if there's a single technology to master for the coming days, it's JavaScript. The future of software is on the Web, where JavaScript is the lingua franca. Save yourself the effort and jump on the bandwagon before it leaves you behind.

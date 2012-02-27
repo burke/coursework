@@ -1,0 +1,77 @@
+\hypertarget{class_cashier_arrival_event}{
+\section{CashierArrivalEvent Class Reference}
+\label{class_cashier_arrival_event}\index{CashierArrivalEvent@{CashierArrivalEvent}}
+}
+Models the arrival of an employee in a simulation.  
+
+
+Inheritance diagram for CashierArrivalEvent::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{class_cashier_arrival_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_cashier_arrival_event_8fac3e34862ebd8334291f43d2e2125c}{CashierArrivalEvent} (int arrival, \hyperlink{class_cashier}{Cashier} employee)
+\begin{CompactList}\small\item\em Construct a new \hyperlink{class_cashier_arrival_event}{CashierArrivalEvent}. \item\end{CompactList}\item 
+void \hyperlink{class_cashier_arrival_event_f3bf40e4e3915f54eb9a24ac816ed0cb}{action} ()
+\begin{CompactList}\small\item\em method called when this event \char`\"{}happens\char`\"{}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{class_cashier_arrival_event_1e9f0f9026b3989b092e9d026c910f16}{
+\hyperlink{class_checkout}{Checkout} \hyperlink{class_cashier_arrival_event_1e9f0f9026b3989b092e9d026c910f16}{checkout}}
+\label{class_cashier_arrival_event_1e9f0f9026b3989b092e9d026c910f16}
+
+\begin{CompactList}\small\item\em The specific \hyperlink{class_checkout}{Checkout} involved in this event. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Models the arrival of an employee in a simulation. 
+
+\small\begin{alltt}
+ \hyperlink{class_cashier_arrival_event}{CashierArrivalEvent}: 
+   (open first available till)
+   T self -> \hyperlink{class_shift_completed_event}{ShiftCompletedEvent} @ quittingTime
+ \end{alltt}
+\normalsize 
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cashier_arrival_event_8fac3e34862ebd8334291f43d2e2125c}{
+\index{CashierArrivalEvent@{CashierArrivalEvent}!CashierArrivalEvent@{CashierArrivalEvent}}
+\index{CashierArrivalEvent@{CashierArrivalEvent}!CashierArrivalEvent@{CashierArrivalEvent}}
+\subsubsection[{CashierArrivalEvent}]{\setlength{\rightskip}{0pt plus 5cm}CashierArrivalEvent::CashierArrivalEvent (int {\em arrival}, \/  {\bf Cashier} {\em employee})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cashier_arrival_event_8fac3e34862ebd8334291f43d2e2125c}
+
+
+Construct a new \hyperlink{class_cashier_arrival_event}{CashierArrivalEvent}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arrival}]time at which employee arrives \item[{\em employee}]employee arriving \subparagraph*{Externals}\end{description}
+\end{Desc}
+\hyperlink{class_cashier}{Cashier} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cashier_arrival_event_f3bf40e4e3915f54eb9a24ac816ed0cb}{
+\index{CashierArrivalEvent@{CashierArrivalEvent}!action@{action}}
+\index{action@{action}!CashierArrivalEvent@{CashierArrivalEvent}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void CashierArrivalEvent::action ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cashier_arrival_event_f3bf40e4e3915f54eb9a24ac816ed0cb}
+
+
+method called when this event \char`\"{}happens\char`\"{}. 
+
+Find the first available checkout, then trigger a \hyperlink{class_shift_completed_event}{ShiftCompletedEvent} at quittingTime. \subparagraph*{Externals}
+
+\hyperlink{class_cashier}{Cashier}, \hyperlink{class_shift_completed_event}{ShiftCompletedEvent} 
+
+Implements \hyperlink{class_event_fea360b9a95713e43cf3f9fa44150074}{Event}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+CashierArrivalEvent.java\end{CompactItemize}

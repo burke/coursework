@@ -1,0 +1,83 @@
+* [0/4]
+  - [ ] Make sure the planning forms are complete
+  - [ ] Complete outlines
+  - [ ] Write first draft of each document.
+  - [ ] Revise and polish first draft
+
+* Hand in: [0/3] 
+  - [ ] planning forms
+  - [ ] Outlines
+  - [ ] Final draft
+
+* Bring one extra copy of final drafts
+
+* Students
+** How to GMail & why
+*** Archive all your old mail 
+*** Spam Blocking
+*** Javascripty
+*** Platform-independant
+
+* Boss
+** Get rid of exchange, use google apps
+*** Exchange difficult to maintain
+*** 
+
+* Students
+** technical documentation for project
+
+
+* Explain to McArts Students (article)
+** Why are you writing this document?
+*** 
+** What response do you want from the readers?
+*** 
+** Target audience: 
+*** 
+** What is this reader's technical or educational background?
+*** 
+** What main question does this reader need answered?
+*** 
+** What features of this reader's personality might affect his or her reading?
+*** 
+** How do you expect this reader will use the document?
+*** 
+** What features does this reader prefer in format, style, and organization?
+*** 
+
+* Explain to Boss (email?)
+** Why are you writing this document?
+*** To sell boss on the benefits of developing product X as an RIA
+** What response do you want from the readers?
+*** To agree that developing product X as an RIA is a good idea.
+** Target audience: 
+*** Our boss
+** What is this reader's technical or educational background?
+*** B.Sc. Computer Science, M.Sc. Computer Engineering, Ph.D Computer Engineering
+** What main question does this reader need answered?
+*** Is it worthwhile to develop product X as an RIA?
+** What features of this reader's personality might affect his or her reading?
+*** Impatience
+** How do you expect this reader will use the document?
+*** Read through it once, make a decision, move on.
+** What features does this reader prefer in format, style, and organization?
+*** Brevity
+
+* Explain to Computer Science Students (informal report?)
+** Why are you writing this document?
+*** To explain the technical details of how RIAs work.
+** What response do you want from the readers?
+*** To be interested in the subject and more educated as a result.
+** Target audience: 
+*** Computer Science Students at the UofM
+** What is this reader's technical or educational background?
+*** Three years of Computer Science, no specific exposure to web development
+** What main question does this reader need answered?
+*** Why should this interest me?
+** What features of this reader's personality might affect his or her reading?
+*** Impatience, general curiosity about technology.
+** How do you expect this reader will use the document?
+*** They'll read it once and never think about it again
+** What features does this reader prefer in format, style, and organization?
+*** Readability and technical detail.
+

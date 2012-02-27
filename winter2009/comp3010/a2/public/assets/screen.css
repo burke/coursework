@@ -1,0 +1,125 @@
+html {
+    background: url(/assets/bg.png) top left repeat-y white;
+}
+
+.ui-datepicker {
+    z-index: 1050;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    color: white;
+}
+
+#content {
+    text-align: left;
+}
+
+#events-container {
+    float: left;
+    width: 204px;
+    text-align: left; 
+    margin-right: 6px;
+    height: 100%;
+    background: #d1d7e2;
+    border-right: 1px solid #404040;
+}
+
+
+#events li {
+    width: 200px;
+    height: 16px;
+    padding: 2px;
+}
+
+#events .active li {
+    background: #8798bb;
+}
+
+#events a {
+    font-family: Helvetica;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: black; 
+}
+
+#main {
+    position: absolute;
+    left: 215px;
+}
+
+#main_pane .title,
+h2 {
+    font-size: 45px;
+    font-family: georgia;
+    color: #aaf;
+    position: relative;
+    z-index: 2;
+}
+
+#main_pane .date {
+    font-family: georgia;
+    font-size: 30px;
+    color: #ccc;
+    position: relative;
+    left: 15px;
+    z-index: 1;
+    margin-top: -13px;
+}
+
+#main label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#new-event input,
+#new-event textarea {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#new-event .fancy {
+    width: 300px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+#new-event textarea {
+
+    height: 120px;
+}
+
+#header h1 {
+    font-family: georgia;
+    float: left;
+    font-size: 32px;
+    line-height: 60px;
+    margin-left: 5px;
+}
+
+#header #users {
+    float: right;
+}
+
+#header form {
+    margin: 19px 19px 0 0;
+    
+}
+
+#new-event-wrap {
+    text-align: center;
+    border-top: 1px solid #b0b0b0;
+}
+
+#new-event-link {
+    color: #070;
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{bios}
+Unknown, ``Removing a bios - cmos password.''
+  http://www.dewassoc.com/support/bios/bios\_password.htm, 2000.
+\newblock [Online; accessed 09-Apr-2008].
+
+\bibitem{denyhosts}
+Unknown, ``Denyhosts frequently asked questions.''
+  http://denyhosts.sourceforge.net/faq.html, 2008.
+\newblock [Online; accessed 09-Apr-2008].
+
+\bibitem{iptables}
+O.~Andreasson, ``Iptables tutorial 1.2.2.''
+  http://iptables-tutorial.frozentux.net/iptables-tutorial.html, 2006.
+\newblock [Online; accessed 09-Apr-2008].
+
+\bibitem{sql}
+Various, ``Sql injection.'' http://en.wikipedia.org/wiki/SQL\_injection, 2008.
+\newblock [Online; accessed 09-Apr-2008].
+
+\bibitem{csrf}
+Various, ``Cross-site request forgery.''
+  http://en.wikipedia.org/wiki/Cross-site\_request\_forgery, 2008.
+\newblock [Online; accessed 09-Apr-2008].
+
+\end{thebibliography}

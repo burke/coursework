@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0"
+	 id="svg2" sodipodi:version="0.32" inkscape:version="0.44.1" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docbase="/home/user" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="7_segment_display_labeled.svg" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+	 viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<sodipodi:namedview  width="300px" height="300px" id="base" inkscape:window-y="0" inkscape:window-x="0" inkscape:window-height="692" inkscape:window-width="1016" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:cy="127.72457" inkscape:cx="128.43944" gridtolerance="10000" bordercolor="#666666" pagecolor="#ffffff" inkscape:zoom="1.7411011" inkscape:pageshadow="2" inkscape:pageopacity="0.0" objecttolerance="10" guidetolerance="10" borderopacity="1.0">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<g id="XMLID_2_">
+		<g>
+			<polygon fill="#888888" points="109.59,49 124.8,64.5 109.59,80 50.59,80 35.07,64.5 50.59,49 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#000000" points="124.8,64.5 109.59,80 50.59,80 35.07,64.5 50.59,49 109.59,49 			"/>
+		</g>
+	</g>
+	<path id="path2779" sodipodi:nodetypes="ccccccc" fill="#ECECEC" stroke="#000000" d="M124.797,146l-15.211,15.5h-59L35.067,146
+		l15.518-15.5h59L124.797,146z"/>
+	<g id="XMLID_1_">
+		<g>
+			<polygon fill="#7F7F7F" points="47.5,82.6 47.5,127.6 32,143.12 16.5,127.6 16.5,82.6 32,67.39 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#000000" points="32,67.39 47.5,82.6 47.5,127.6 32,143.12 16.5,127.6 16.5,82.6 			"/>
+		</g>
+	</g>
+	<path id="path2789" sodipodi:nodetypes="ccccccc" fill="#ECECEC" stroke="#000000" d="M128,67.385l15.5,15.212v45L128,143.115
+		l-15.5-15.518v-45L128,67.385z"/>
+	<g id="XMLID_4_">
+		<g>
+			<polygon fill="#888888" points="109.59,212.56 124.8,228.06 109.59,243.56 50.59,243.56 35.07,228.06 50.59,212.56 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#000000" points="124.8,228.06 109.59,243.56 50.59,243.56 35.07,228.06 50.59,212.56 
+				109.59,212.56 			"/>
+		</g>
+	</g>
+	<g id="XMLID_3_">
+		<g>
+			<polygon fill="#888888" points="47.5,164.65 47.5,209.65 32,225.17 16.5,209.65 16.5,164.65 32,149.44 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#000000" points="32,149.44 47.5,164.65 47.5,209.65 32,225.17 16.5,209.65 16.5,164.65 			"/>
+		</g>
+	</g>
+	<path id="path2795" sodipodi:nodetypes="ccccccc" fill="#ECECEC" stroke="#000000" d="M128,149.442l15.5,15.212v45L128,225.172
+		l-15.5-15.518v-45L128,149.442z"/>
+</g>
+<sodipodi:namedview  width="300px" height="300px" id="base" inkscape:window-y="0" inkscape:window-x="0" inkscape:window-height="692" inkscape:window-width="1016" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:cy="127.72457" inkscape:cx="128.43944" gridtolerance="10000" bordercolor="#666666" pagecolor="#ffffff" inkscape:zoom="1.7411011" inkscape:pageshadow="2" inkscape:pageopacity="0.0" objecttolerance="10" guidetolerance="10" borderopacity="1.0">
+	</sodipodi:namedview>
+<g id="layer1_1_" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<g id="XMLID_5_">
+		<g>
+			<polygon fill="#888888" points="287.5,164.65 287.5,209.65 272,225.17 256.5,209.65 256.5,164.65 272,149.44 			"/>
+			<polygon fill="#888888" points="287.5,82.6 287.5,127.6 272,143.12 256.5,127.6 256.5,82.6 272,67.39 			"/>
+			<polygon fill="#888888" points="253.59,49 268.8,64.5 253.59,80 194.59,80 179.07,64.5 194.59,49 			"/>
+			<polygon fill="#ECECEC" points="253.59,130.5 268.8,146 253.59,161.5 194.59,161.5 179.07,146 194.59,130.5 			"/>
+			<polygon fill="#888888" points="253.59,212.56 268.8,228.06 253.59,243.56 194.59,243.56 179.07,228.06 194.59,212.56 			"/>
+			<polygon fill="#888888" points="191.5,164.65 191.5,209.65 176,225.17 160.5,209.65 160.5,164.65 176,149.44 			"/>
+			<polygon fill="#888888" points="191.5,82.6 191.5,127.6 176,143.12 160.5,127.6 160.5,82.6 176,67.39 			"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#000000" points="268.8,64.5 253.59,80 194.59,80 179.07,64.5 194.59,49 253.59,49 			"/>
+			<polygon fill="none" stroke="#000000" points="268.8,146 253.59,161.5 194.59,161.5 179.07,146 194.59,130.5 253.59,130.5 			"/>
+			<polygon fill="none" stroke="#000000" points="176,67.39 191.5,82.6 191.5,127.6 176,143.12 160.5,127.6 160.5,82.6 			"/>
+			<polygon fill="none" stroke="#000000" points="272,67.39 287.5,82.6 287.5,127.6 272,143.12 256.5,127.6 256.5,82.6 			"/>
+			<polygon fill="none" stroke="#000000" points="268.8,228.06 253.59,243.56 194.59,243.56 179.07,228.06 194.59,212.56 
+				253.59,212.56 			"/>
+			<polygon fill="none" stroke="#000000" points="176,149.44 191.5,164.65 191.5,209.65 176,225.17 160.5,209.65 160.5,164.65 			
+				"/>
+			<polygon fill="none" stroke="#000000" points="272,149.44 287.5,164.65 287.5,209.65 272,225.17 256.5,209.65 256.5,164.65 			
+				"/>
+		</g>
+	</g>
+</g>
+</svg>

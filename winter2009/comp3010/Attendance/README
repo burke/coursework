@@ -1,0 +1,7 @@
+To deploy this application to a Sun SPOT, do one of the following:
+
+1) Open the project in NetBeans, then run "Compile and Deploy to Sun SPOT"
+
+2) Run "ant deploy" from the project root.
+
+

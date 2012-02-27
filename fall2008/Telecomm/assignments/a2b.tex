@@ -1,0 +1,35 @@
+\documentclass[10pt,letterpaper]{article}
+
+\begin{document}
+
+\author{Burke Libbey \\ 6840752}
+\title{ECE 3700: Assignment 2b}
+\date{\today}
+
+\maketitle
+
+\begin{enumerate}
+\item The propagation time can safely be ignored in most cases, as it's usually several orders of magnitude less than $t_{trans}$. Ex. On a 3km cable, $t_{trans}$ will be approximately $\frac{3000}{\frac{2}{3}*c}$ -- on the order of $10^{-5}$.
+
+\item 
+  \begin{itemize}
+    \item \textbf{$N$}: The number of nodes
+    \item \textbf{$p$}: The probability that any node will be transmitting at a given moment in time
+    \item \textbf{$(1-p)^{N-1}$}: The probability all nodes other than the one wanting to transmit are silent at the moment of transmission
+  \end{itemize}
+
+\item 
+  \begin{itemize}
+    \item (See $N$, $p$, and $(1-p)^{N-1}$ above)
+    \item \textbf{$(1-p)^{N}$}: The probability that no node wants to transmit at a given instant
+  \end{itemize}
+
+
+\end{enumerate}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

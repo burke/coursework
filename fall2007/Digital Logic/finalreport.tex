@@ -1,0 +1,43 @@
+\documentclass[12pt,letterpaper,titlepage]{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%
+
+\title{ECE 2220 Final Design Project}
+\author{Burke Libbey \\ John Ermitanio \\ Crystal Kotlar}
+\date{December 3, 2007}
+\maketitle
+
+%%%%%%%% END TITLE PAGE %%%%%%%%%%%%%
+
+%%%%%%%% PAGE 1 %%%%%%%%%%%%%%%%%%
+
+\subsection*{Project Summary}
+
+Using an Altera FPGA and Quartus II software, our team designed a prototype system to autonomously monitor the output transmission of a selected aircraft navigation beacon.
+
+
+\subsection*{Implementation}
+
+Each aircraft navigation beacon (NDB) transmits a short morse code signal consisting of two characters. This signal was converted to a binary sequence using the following rules:
+\begin{itemize}
+\small
+\item Dashes convert to three consecutive `\texttt{1}'s.
+\item Dots convert to a single `\texttt{1}'.
+\item A single `\texttt{0}' is inserted between each dot or dash.
+\item Three consecutive `\texttt{0}'s are inserted between letters.
+\item Seven `\texttt{0}'s are inserted after each word.
+\end{itemize}
+The sequences `AB' and `CD' were converted according to the rules above and stored in two series of shift registers. Using the keypad input, one of the sequences is chosen. The content of the associated shift register is then unloaded into the comparator on the positive clock edge.
+
+The comparator consists of an XOR gate comparing the unloaded sequence from the chosen shift register and the morse code input from the beacon (modeled by a pushbutton). The inputs are only compared on the negative clock edge. When the output line initially goes high, a D flip-flop is set high. This indicates an error state, and the system waits for a manual reset.
+
+\includegraphic{highlevelarchitecture.eps}
+
+%%%%%%%% END PAGE 1 %%%%%%%%%%%%%%%
+
+
+\end{document}

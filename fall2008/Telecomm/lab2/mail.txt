@@ -1,0 +1,22 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: b.libbey@gmail.com
+Received: by 10.114.202.16 with SMTP id z16cs509627waf;
+        Thu, 7 Feb 2008 09:09:19 -0800 (PST)
+Received: by 10.65.156.2 with SMTP id i2mr22170090qbo.60.1202404158866;
+        Thu, 07 Feb 2008 09:09:18 -0800 (PST)
+Return-Path: <rms@stallman.org>
+Received: from eceserver.ee.umanitoba.ca (eceserver.ee.umanitoba.ca [130.179.128.30])
+        by mx.google.com with ESMTP id q18si9920747qbq.22.2008.02.07.09.09.18;
+        Thu, 07 Feb 2008 09:09:18 -0800 (PST)
+Received-SPF: neutral (google.com: 130.179.128.30 is neither permitted nor denied by best guess record for domain of rms@stallman.org) client-ip=130.179.128.30;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 130.179.128.30 is neither permitted nor denied by best guess record for domain of rms@stallman.org) smtp.mail=rms@stallman.org
+Received: from zaphod ([130.179.228.250])
+	by eceserver.ee.umanitoba.ca (8.13.6+Sun/8.13.6) with SMTP id m17H51DR022421
+	for b.libbey@gmail.com; Thu, 7 Feb 2008 11:08:01 -0600 (CST)
+Date: Thu, 7 Feb 2008 11:05:01 -0600 (CST)
+From: rms@stallman.org
+Message-Id: <200802071708.m17H51DR022421@eceserver.ee.umanitoba.ca>
+Subject: Test Email
+
+Burke Libbey (6840752)
+--Burke

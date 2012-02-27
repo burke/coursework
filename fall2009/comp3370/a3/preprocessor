@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+# Borrowed this from Ryan Neufeld. It just strips semicolon comments from
+# the assembly. 
+
+filename = ARGV.shift
+lines = []
+File.open(filename, 'r') do |f|   # open file for update
+    lines = f.readlines           # read into array of lines
+    lines.each do |it|            # modify lines
+        it.gsub!(/;.*/, '')
+    end
+end
+File.open("stripped-"+filename, 'w') do |f|
+  f.print lines                 # write out modified lines
+  f.truncate(f.pos)             # truncate to new length
+end                             # file is automatically closed
+
+puts `./assembler stripped-#{filename}`
+`mv stripped-#{filename.gsub('asm','o')} #{filename.gsub('asm','o')}`
+`rm stripped-#{filename}`
